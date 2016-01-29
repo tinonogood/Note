@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<p>MDtoHTML</p>
+	</head>
+	<body>
+		<p>Markdown note</p>
+		<h1>區塊</h1>
+			<h2>段落換行</h2>
+				<p>
+				段落: 中間需插入空行<br />
+				換行: 行尾加上兩個以上的空白，然後按enter
+				</p>
+			<h2>標題</h2>
+				<h1>h1h1h1h1h1</h1>
+				<h2>h2h2h2h2h2</h2>
+				<h6>(略)</h6>
+				<h6>h6h6h6h6h6h6</h6>
+				<p>
+				<code># h1h1h1h1h1<br />
+				## h2h2h2h2h2<br />
+				(略)<br />
+				###### h3h3h3h3h3h3
+				</code>
+				</p>
+			<h2>清單</h2>
+				<ul>
+					<li><p>1st</p></li>
+					<li><p>2st</p></li>
+					<li><p>3rd</p>
+						<p>
+						- 1st<br />
+						- 2nd<br />
+						- 3rd
+						</p>
+					</li>
+				</ul>
+				<ol>
+					<li><p>1st</p></li>
+					<li><p>2st</p></li>
+					<li><p>3rd</p>
+						<p>
+						1. 1st<br />
+						2. 2nd<br />
+						3. 3rd
+						</p>
+					</li>
+				</ol>
+			<h2>分隔線</h2>
+				<p>===</p>
+				<pre><code>三個以上的&quot;=&quot;
+				</code></pre>
+		<h1>區段元素</h1>
+			<h2>連結</h2>
+				<pre><code>[文字](連結網址)</code></pre>
+				<p><img src="./MD/img/1.gif" alt=""></p>
+				<p><a href="www.google.tw">links to google</a></p>
+				<pre><code>&lt;自動連結網址&gt;: 文字同連結網址
+				</code></pre>
+				<p><img src="./MD/img/2.gif" alt=""></p>
+			<h2>強調</h2>
+				<p><em>斜體</em>  <em>斜體</em><br>
+				<strong>粗體</strong> <strong>粗體</strong></p>
+				<p>
+				_斜體_  *斜體* <br /> 
+				__粗體__ **粗體**
+				</p>
+				<pre>可用反斜線跳脫, ex: \*\*粗體**, \*斜體*</pre>
+			<h2>程式碼</h2>
+				<p><code>your code</code></p>
+				<pre><code>`your code` 反引號
+				</code></pre>
+			<h2>圖片</h2>
+				<pre><code>![文字](圖片來源), 比&quot;連結&quot;前面多驚嘆號
+				</code></pre>
+
+		<h1>HTML 補充</h1>
+			<h2>水平線</h2>
+				<p> &lt hr /  &gt</p>
+				<hr />
+			<h2>跳脫</h2>
+				<p>
+				&lt =<CODE>&amp;lt</CODE><br />
+				&gt =<CODE>&amp;gt</CODE><br />
+				跳脫字元本身必定也是有特殊意義的字元<br />
+				按 HTML 的語法，&amp; 它自己要以 <CODE>&amp;amp;</CODE> (ampersand) 來呈現。
+				</p>
+	</body>
+</html>
