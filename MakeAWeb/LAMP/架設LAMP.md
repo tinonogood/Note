@@ -42,9 +42,15 @@
 
 4. firefox 打不開php
 
-Help > Troubleshooting Information > Profile Directory: Show Folder
+- Help > Troubleshooting Information > Profile Directory: Show Folder
 
 Try to delete the mimeTypes.rdf file in the Firefox Profile Folder to reset all file actions.
+
+![](./img/LAMP_14.PNG)
+
+- 包在html中
+
+![](./img/LAMP_15.PNG)
 
 
 
