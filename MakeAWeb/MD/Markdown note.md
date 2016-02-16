@@ -82,3 +82,20 @@ __粗體__ **粗體**
 ## 圖片
 
 	![文字](圖片來源), 比"連結"前面多驚嘆號
+
+## 表格
+
+| Tables   |      Are      |  Cool |
+|----------|:-------------:|------:|
+| col 1 is |  left-aligned | $1600 |
+| col 2 is |    centered   |   $12 |
+| col 3 is | right-aligned |    $1 |
+
+	| Tables   |      Are      |  Cool |
+	|----------|:-------------:|------:|
+	| col 1 is |  left-aligned | $1600 |
+	| col 2 is |    centered   |   $12 |
+	| col 3 is | right-aligned |    $1 |
+
+[參考網址1](http://markdown.tw/)
+[參考網址1](http://www.tablesgenerator.com/markdown_tables)
