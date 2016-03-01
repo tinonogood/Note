@@ -6,7 +6,7 @@ import java.util.Scanner;
  * Created by Tino on 2016/2/29.
  */
 public class TestLoanClass {
-    public void main(String[] args) {
+    public static void main(String[] args) {
         //Create a Scanner
         Scanner input = new Scanner(System.in);
 
@@ -33,7 +33,7 @@ public class TestLoanClass {
     /**
      * Created by Tino on 2016/2/29.
      */
-    public class Loan {
+    public static class Loan {
         private double annualInterestRate;
         private int numberOfYears;
         private double loanAmount;
