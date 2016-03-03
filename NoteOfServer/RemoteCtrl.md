@@ -32,3 +32,8 @@ SSH server-client連線步驟
 
 ![](./img/RemoteCtrl_2.PNG)
 
+##### 啟動SSH
+
+#/etc/init.d/sshd [restart]
+
+#netstat -tlnp | grep ssh: 觀察ssh連線狀況
