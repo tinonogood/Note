@@ -15,15 +15,15 @@ public class ChkPt4_1 {
         System.out.println(Math.exp(1));
         System.out.println(Math.max(2,Math.min(3,4)));
         System.out.println(Math.rint(-2.5));
-        System.out.println(Math);
-        System.out.println(Math);
-        System.out.println(Math);
-        System.out.println(Math);
-        System.out.println(Math);
-        System.out.println(Math);
-        System.out.println(Math);
-        System.out.println(Math);
-        System.out.println(Math);
-        System.out.println(Math);
+        System.out.println(Math.ceil(-2.5));
+        System.out.println(Math.floor(-2.5));
+        System.out.println(Math.round(-2.5f));
+        System.out.println(Math.round(-2.5));
+        System.out.println(Math.rint(2.5));
+        System.out.println(Math.ceil(2.5));
+        System.out.println(Math.floor(2.5));
+        System.out.println(Math.round(2.5f));
+        System.out.println(Math.round(2.5));
+        System.out.println(Math.round(Math.abs(-2.5)));
     }
 }
