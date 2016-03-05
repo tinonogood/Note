@@ -9,7 +9,7 @@ public class ChkPt3_30 {
         int y = 3;
         switch (x + 3){
             case 6: y=1;
-                default: y += 1;
+            default: y += 1;
         }
         System.out.print(y);
     }

@@ -99,8 +99,5 @@ public class TestLoanClass {
         public java.util.Date getLoanDate(){
             return loanDate;
         }
-
-
-
     }
 }
