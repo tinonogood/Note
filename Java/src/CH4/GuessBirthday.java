@@ -5,6 +5,6 @@ package CH4;
  */
 public class GuessBirthday {
     public static void main(String[] args) {
-        
+
     }
 }
