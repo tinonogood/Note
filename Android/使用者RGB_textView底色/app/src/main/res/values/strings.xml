@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Exercise4-4</string>
+    <string name="colorR">Red</string>
+    <string name="colorG">Green</string>
+    <string name="colorB">Blue</string>
+    <string name="etBgColor">Please select Background Color</string>
+</resources>
