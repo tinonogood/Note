@@ -44,21 +44,21 @@ VASP的不同版本(標準, gramma only, 非共線板本...)
 
 從 root/arch複製所需(最接近作業系統)的makefile.include.arch檔案到 root/makefile.include
 
-	ex: '#cp arch/makefile.include.linux_intel  ./makefile.include'
+	ex: #cp arch/makefile.include.linux_intel  ./makefile.include
 
 設置makefile.include以配合自身系統(見section 3)
 
 編譯VASP
 
-	'#make all'
+	#make all
 
 若要編譯其他版本(standard, gamma-only, and non-collinear)
 
-	'#make std'
+	#make std
 
-	'#make gam'
+	#make gam
 
-	'#make ncl'
+	#make ncl
 
 ##3. 調整makefile.include
 
@@ -68,47 +68,43 @@ Precompiler variables:
 ------------------------------------------------------------------------
 
 CPP_OPTIONS:
-	Specify the precompiler flags: [-Dflag1 [-Dflag2] ... ]
-	Take a lead from the makefile.include.arch files in /arch
-	and consult the VASP manual.
 
-	N.B.I: -DNGZhalf, -DwNGZhalf, -DNGXhalf, -DwNGXhalf are
-	       deprecated options.  Building the standard, gamma-only,
-	       or non-collinear version of the code is specified through
-	       an additional argument to the make command
-	       (see "make" section below).
+定義precompiler flags: [-Dflag1 [-Dflag2] ... ]
 
-	N.B.II:	CPP_OPTIONS is only used in this file,
-	        where it should be added to CPP (see below).
+Take a lead from the makefile.include.arch files in /arch
+and consult the VASP manual.
+
+見下方欲增加的功能來加上項目
+
+CPP_OPTIONS只用於此檔案,並將此加在CPP(如下).
 
 
 CPP:
-	The command to invoke the precompiler you want to use,
-	for instance:
 
-	Using Intel's Fortran precompiler:
-		CPP=fpp -f_com=no -free -w0 $*$(FUFFIX) $*$(SUFFIX) $(CPP_OPTIONS)
+此指令加入想調用的the precompiler,如下
 
-        Using cpp:
-		CPP=/usr/bin/cpp -P -C -traditional $*$(FUFFIX) >$*$(SUFFIX) $(CPP_OPTIONS)
+ex: 使用Intel's Fortran precompiler:
 
-	N.B.: This variable has to include $(CPP_OPTIONS)!
-	      If not, CPP_OPTIONS will be ignored.
+	CPP=fpp -f_com=no -free -w0 $*$(FUFFIX) $*$(SUFFIX) $(CPP_OPTIONS)
+
+    Using cpp:
+	CPP=/usr/bin/cpp -P -C -traditional $*$(FUFFIX) >$*$(SUFFIX) $(CPP_OPTIONS)
+
+加入$(CPP_OPTIONS)! 否則CPP_OPTIONS將不被引入.
 
 
 
 Compiler variables:
 ------------------------------------------------------------------------
 
-The Fortran compiler will be invoked as:
+The Fortran compiler需寫入以下項目:
 
 	$(FC) $(FREE) $(FFLAGS) $(OFLAG) $(INCS)
 
 
 FREE:
-	Specify the options that your Fortran compiler needs for it to
-	accept free-form source layout, without line-length limitation.
-	For instance:
+
+Specify the options that your Fortran compiler needs for it to accept free-form source layout, without line-length limitation.
 
 	Using Intel's Fortran compiler:
 		FREE=-free -names lowercase
@@ -118,27 +114,33 @@ FREE:
 
 
 FC:
-	The command to invoke your Fortran compiler
-	(e.g. gfortran, ifort, mpif90, mpiifort, ... ).
+	
+Fortran compiler指令
+
+(e.g. gfortran, ifort, mpif90, mpiifort, ... ).
 
 
 FCL:
-	The command that invokes the linker: in most cases identical to:
 
-		FCL=$(FC) [+ some options]
+Fortran compiler引入的linker: in most cases identical to:
 
-	Using the Intel composer suite (Fortan compiler + MKL libraries),
-	typically:
+	FCL=$(FC) [+ some options]
 
-		FCL=$(FC) -mkl
+Using the Intel composer suite (Fortan compiler + MKL libraries),
+
+typically:
+
+	FCL=$(FC) -mkl
 
 
-OFLAG:	
-	The general level of optimization (default: OFLAG=-O2).
+OFLAG:
+
+優化選項 (default: OFLAG=-O2).
 
 
 FFLAGS:
-	Additional compiler flags.
+
+額外 compiler flags.
 
 
 OFLAG_IN:
