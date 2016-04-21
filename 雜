@@ -1,0 +1,16 @@
+＃2016/04/21
+CentOS6.7 設置DNS＠NTUST
+
+  #vim /etc/sysconfig/network-scripts/ifcfg-eth0
+  DEVICE=eth0
+  HWADDR=MAC卡號
+  TYPE=Ethernet
+  UUID=e5d90fb7-f325-464d-b6d0-ac7b1220f097
+  ONBOOT=yes
+  NM_CONTROLLED="no"
+  BOOTPROTO=none
+  IPADDR=IP位置
+  NETMASK=255.255.255.0
+  GATEWAY=140.118.160.254
+  DNS1=140.118.31.99
+  DNS2=140.118.6.32
