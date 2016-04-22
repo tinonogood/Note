@@ -31,8 +31,9 @@
 	 #cd vasp.5.lib/
 
 	 #cp makefile.linux_ifc_P4 Makefile
-
-	 #vim Makefile: FC改為ifort, 存檔離開
+	
+	 #vim Makefile: FC=>mpiifort
+	 (#vim Makefile: FC改為ifort, 存檔離開)
 
 	 #make
 
@@ -49,12 +50,43 @@
 	 #wget http://cms.mpi.univie.ac.at/patches/patch.5.4.1.27082015.gz
 
 	 #wget http://cms.mpi.univie.ac.at/patches/patch.5.4.1.06112015.gz
+	 
+	 #gzip -d patch.*.gz 解壓縮全部patch
 
 	 #patch -p1 < patch.5.4.1.08072015
-
+	 
+	 	patching file arch/makefile.include.linux_intel
+		Reversed (or previously applied) patch detected!  Assume -R? [n] y
+		patching file src/mlwf.F
+		Reversed (or previously applied) patch detected!  Assume -R? [n] y       
+		patching file src/scala.F
+		Reversed (or previously applied) patch detected!  Assume -R? [n] y
+		patching file src/subrot.F
+		Reversed (or previously applied) patch detected!  Assume -R? [n] y
+		patching file src/us.F
+		Reversed (or previously applied) patch detected!  Assume -R? [n] y
+		patching file src/vdwforcefield.F
+		Reversed (or previously applied) patch detected!  Assume -R? [n] y
+		Hunk #1 succeeded at 9935 (offset 1 line).
+	 
 	 #patch -p1 < patch.5.4.1.27082015
+	 
+	 	patching file src/lattlib.F
+		Reversed (or previously applied) patch detected!  Assume -R? [n] y
+		patching file src/main.F
+		Reversed (or previously applied) patch detected!  Assume -R? [n] y
+		Hunk #1 succeeded at 843 (offset 24 lines).
+		patching file src/symlib.F
+		Reversed (or previously applied) patch detected!  Assume -R? [n] y
+		patching file src/symmetry.F
+		Reversed (or previously applied) patch detected!  Assume -R? [n] y
+		patching file src/vdwforcefield.F
+		Reversed (or previously applied) patch detected!  Assume -R? [n] y
 
 	 #patch -p1 < patch.5.4.1.06112015
+	 
+	 	patching file src/fock.F
+		Reversed (or previously applied) patch detected!  Assume -R? [n] y
 
 	 <GPU support, no need in alps>
 
@@ -68,12 +100,14 @@
 
 	 改makefile.include
 
-	 -FFLAGS = -FR -names lowercase -assume byterecl
-
-	 -OFLAG=-O2 -ip -ftz -xSSE3
-
-	 -FC=mpiifort
+	 	FC         = mpiifort
+		FCL        = mpiifort -mkl
+		BLACS      = -lmkl_blacs_intelmpi_lp64
+		
+	 #make
 	 
-	 -FC=$(FC) -mkl
-
+	 在root/bin中可得vasp_std, vasp_ncl, vasp_gam 
+		
+		
+參考：
 [Stone's blog](https://ycstone.wordpress.com/2012/09/18/%E5%9C%A8nchc-alps%E4%B8%8A%E4%BD%BF%E7%94%A8intel-compiler-intel-mpi-intel-mkl%E4%BE%86%E7%B7%A8%E8%AD%AF-vasp/)
