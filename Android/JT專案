@@ -1,0 +1,26 @@
+2016/4/30
+
+1)Bad Sample from android studio
+  New > Import Sample > Navigation Drawer , JT_0430_2
+  Update all setting
+
+2)HAXM升級
+  sdk manager> extra > HAXM, get new version
+  check: Android SDK location, and install it
+
+3)Sample 2
+  http://blog.30sparks.com/material-design-1-navigation-drawer/
+  
+  3.1) build gradle
+      compile 'com.android.support:appcompat-v7:23.3.0'
+      compile 'com.android.support:design:23.3.0'
+      
+  3.2)res/values/style.xml修改
+      <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+          <item name="colorPrimary">@color/colorPrimary</item>
+          <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+          <item name="android:windowActionBar">@color/colorAccent</item>
+          <item name="android:windowActionModeOverlay">true</item>
+          <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+          <item name="android:statusBarColor">@android:color/transparent</item>
+      </style>
