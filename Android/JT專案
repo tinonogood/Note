@@ -24,3 +24,6 @@
           <item name="android:windowDrawsSystemBarBackgrounds">true</item>
           <item name="android:statusBarColor">@android:color/transparent</item>
       </style>
+      
+  3.3)extend fragment
+    記得"import android.support.v4.app.Fragment;"因為drawer的相依
