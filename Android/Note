@@ -1,0 +1,5 @@
+#2016/4/30
+
+API level:
+修改build.gradle中
+minSdkVersion 14 >> minSdkVersion 21
