@@ -13,3 +13,5 @@
 - 定義常數, 使程式更容易閱讀 ex: final double KILOGRAMS_PER_POUND = 0.45359237;
 
 - Scanner重複利用, 放前面
+
+- static函式中只能呼叫static成員 
