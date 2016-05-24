@@ -1,3 +1,33 @@
+＃2016/04/24
+CentOS6.7 DNS重開機失效
+  疑似 NetworkManager接管網路設置
+  #chkconfig NetworkManager off
+
+
+
+＃2016/04/23
+新增網卡
+
+  ＃ifconfig / #dmesg | grep -in eth
+    可找到新增的eth1網卡，不會自動啟動，沒IP
+  #ls /etc/sysconfig/network-scripts 
+    無設定檔：ifcfg-eth1
+    
+  設定
+  ＃yum install system-config-network-tui
+  # system-config-network-tui
+    裝置組態設定>New Device>乙太網路
+      名稱            eth1
+      裝置            eth1
+      靜態 IP         192.168.0.1
+      網路遮罩        255.255.255.0
+    > 儲存並離開
+  # vim ifcfg-eth1
+    onboot=yes
+  # /etc/init.d/network restart
+  # ping 192.168.0.1
+
+
 ＃2016/04/21
 CentOS6.7 設置DNS＠NTUST
 

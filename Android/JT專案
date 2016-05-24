@@ -1,0 +1,27 @@
+2016/5/01
+1)fragment無法裝載listview or cardview
+  改用CardFragment
+
+2016/4/30
+
+1)Bad Sample from android studio
+  New > Import Sample > Navigation Drawer , JT_0430_2
+  Update all setting
+
+2)HAXM升級
+  sdk manager> extra > HAXM, get new version
+  check: Android SDK location, and install it
+
+3)Sample 2
+  http://blog.30sparks.com/material-design-1-navigation-drawer/
+  
+  3.1) build gradle
+      compile 'com.android.support:appcompat-v7:23.3.0'
+      compile 'com.android.support:design:23.3.0'
+      
+  3.2)res/values/style.xml修改
+      <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+      </style>
+      
+  3.3)extend fragment
+    記得"import android.support.v4.app.Fragment;"因為drawer的相依
