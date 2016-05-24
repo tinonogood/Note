@@ -50,8 +50,8 @@
 
 	- 呱呱叫interface, 包含2種呱呱行為class(Quack, Squeak)
 
-![將method分類](./img/1)
+![將method分類](./img/1.PNG)
 
-![將method分類](./img/2)
+![將method分類](./img/2.PNG)
 
 4. 測試鴨子們
