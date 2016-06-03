@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="teamfour.basicui1.MainActivity">
+
+
+    <EditText
+        android:hint="@string/hint_etName"
+        android:id="@+id/etName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:hint="@string/hint_etPasswd"
+        android:id="@+id/etPasswd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etName"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:hint="@string/hint_etPhone"
+        android:id="@+id/etPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etPasswd"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:hint="@string/hint_etAge"
+        android:id="@+id/etAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etPhone"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btSubmit"
+        android:onClick="onSubmitClick"
+        android:text="@string/text_btSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etAge"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/btClear"
+        android:text="@string/text_btClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btSubmit"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:lines="5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#969595"
+        android:layout_below="@+id/btClear"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>
