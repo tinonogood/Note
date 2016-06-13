@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BasicUI1</string>
+
+    <string name="hint_etName">Name</string>
+    <string name="hint_etPasswd">Passwd</string>
+    <string name="hint_etPhone">Phone</string>
+    <string name="hint_etAge">Age</string>
+    <string name="text_btSubmit">Submit</string>
+    <string name="text_btClear">Clear</string>
+</resources>

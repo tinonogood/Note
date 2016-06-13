@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">CompoundButton</string>
+    <string name="text_rbFemale">Female</string>
+    <string name="text_rbMale">Male</string>
+    <string name="text_place1">台北</string>
+    <string name="text_place2">台中</string>
+    <string name="text_place3">台南</string>
+    <string name="textOff_tbVibrateOff">震動開</string>
+    <string name="textOn_tbVibrateOn">震動關</string>
+    <string name="swWifi">WIFI</string>
+    <string name="textOff_swWifiOff">OFF</string>
+    <string name="textOn_swWifiOn">ON</string>
+    <string name="checked">checked</string>
+    <string name="unchecked">unchecked</string>
+</resources>

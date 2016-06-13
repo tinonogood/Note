@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Menus</string>
+    <string name="yangmingshan">yangmingshan</string>
+    <string name="guide">guide</string>
+    <string name="traffic">traffic</string>
+    <string name="yushan">yushan</string>
+    <string name="taroko">taroko</string>
+    <string name="myloc">myloc</string>
+    <string name="exit">exit</string>
+    <string name="clear">clear</string>
+    <string name="background">background</string>
+    <string name="yellow">yellow</string>
+    <string name="green">green</string>
+    <string name="cyan">cyan</string>
+    <string name="deleteItem">deleteItem</string>
+    <string name="deleteAll">deleteAll</string>
+    <string name="text_tvTitle">Press menu button (on the upper right corner)</string>
+    <string name="text_btDelete">delete</string>
+</resources>

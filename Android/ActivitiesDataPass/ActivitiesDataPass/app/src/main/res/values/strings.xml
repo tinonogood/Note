@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ActivitiesDataPass</string>
+    <string name="title_result_activity">ResultActivity</string>
+    <string name="hint_etProgramming">Programming</string>
+    <string name="hint_etDataStructure">DataStructure</string>
+    <string name="hint_etAlgorithm">Algorithm</string>
+    <string name="text_btSubmit">Submit</string>
+    <string name="text_tvTitle">Scores</string>
+    <string name="text_tvResultTitle">Result</string>
+    <string name="text_btBack">Back</string>
+</resources>
