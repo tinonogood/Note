@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">SQL</string>
+    <string name="text_Insert">Insert</string>
+    <string name="text_Update">Update</string>
+    <string name="msg_NoDataFound">NoDataFound</string>
+    <string name="text_TitleSpot">TitleSpot</string>
+    <string name="text_tvRowCount">tvRowCount</string>
+    <string name="text_SpotId">SpotId</string>
+    <string name="text_SpotName">SpotName</string>
+    <string name="text_SpotWeb">SpotWeb</string>
+    <string name="text_SpotPhone">Phone</string>
+    <string name="text_SpotAddress">Address</string>
+    <string name="text_btBack">Back</string>
+    <string name="text_btNext">Next</string>
+    <string name="text_Delete">Delete</string>
+    <string name="btLoadPicture">Load</string>
+    <string name="btTakePicture">Take</string>
+    <string name="text_btCancel">Cancel</string>
+    <string name="msg_RowDeleted">Deleted</string>
+    <string name="text_NotGranted">NotGranted</string>
+    <string name="msg_NoCameraAppsFound">NoCameraAppsFound</string>
+    <string name="msg_NameIsInvalid">NameIsInvalid</string>
+    <string name="msg_NoImage">NoImage</string>
+    <string name="msg_InsertSuccess">Success</string>
+    <string name="msg_InsertFail">Fail</string>
+    <string name="msg_RowUpdated">Updated</string>
+</resources>

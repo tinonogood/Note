@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SharedPreferences</string>
+    <string name="text_btPrefSave">Save</string>
+    <string name="text_btPrefLoad">Load</string>
+    <string name="text_btDefault">Default</string>
+    <string name="text_tvAutoShot">AutoShot Time</string>
+    <string name="text_rbNo">No</string>
+    <string name="text_rbYes">Yes</string>
+    <string name="text_tvAutoFocus">AutoFocus</string>
+    <string name="text_tvFileName">FileName</string>
+    <string name="msg_RequireNumber">RequireNumber</string>
+    <string name="msg_preferencesSaved">Saved</string>
+    <string name="msg_preferencesLoaded">Loaded</string>
+    <string name="msg_DefaultsRestored">DefaultsRestored</string>
+</resources>
