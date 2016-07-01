@@ -66,8 +66,11 @@ Periodic DFT
 
 - MCFF optimizer
 
+Example Size: 125*325*125; # of atom : 10^5
 
+## COSMO-RS: fluid thermodynamic
 
+goumans@scm.com
 
 SCM - Scientific Computing & Modelling
 
