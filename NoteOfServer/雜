@@ -1,0 +1,27 @@
+## CentOS 6
+
+### 光碟yum
+
+`mount -t iso9660 -o loop  cdrom.iso /mnt`
+
+`cat .discinfo`
+
+`vim /etc/yum.repos.d/CentOS-Media.repo‵
+
+[C6-Media]
+
+name=6.4
+
+baseurl=file:///mnt/
+
+mediaid=1341569670.539525
+
+metadata_expire=-1
+
+gpgcheck=0
+
+cost=500
+
+enabled=1
+
+`mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.disable`
