@@ -4,36 +4,60 @@
 
 ### X server/X Client/Window Manager/Display Manager
 
-	´ó²¿·ÖdistributionÓÉXorg»ù½ğ•şÌá¹©µÄX11Ü›ów
-	MITÊÚ™à,GPLé_·ÅÔ­Ê¼´a
+	å¤§éƒ¨åˆ†distributionç”±XorgåŸºé‡‘æœƒæä¾›çš„X11è»Ÿé«”
+	MITæˆæ¬Š,GPLé–‹æ”¾åŸå§‹ç¢¼
 ![](./img/X_1.PNG)
 
 ##### X Server
 
-	Ó²ów¹ÜÀí: æI±P,»¬Êó,ï@Ê¾Æ÷,ï@¿¨......
-	Œ¢İ”ÈëÑbÖÃµÄ„Ó×÷¸æÖªClient 
+	ç¡¬é«”ç®¡ç†: éµç›¤,æ»‘é¼ ,é¡¯ç¤ºå™¨,é¡¯å¡......
+	å°‡è¼¸å…¥è£ç½®çš„å‹•ä½œå‘ŠçŸ¥Client 
 
 ##### X Client
 
-	Ø“ØŸX serverÒªÇóÊÂ¼şÖ®ÌÀí
+	è² è²¬X serverè¦æ±‚äº‹ä»¶ä¹‹è™•ç†
 
 ##### X Window Manager
 
-	¹ÜÀíËùÓĞX clients
-	- Ìá¹©¿ØÖÆÔªËØ£¬Èç¹¤×÷ÁĞ¡¢±³¾°×ÀÃæµÄÔO¶¨µÈµÈ£»
-	- ¹ÜÀíÌ“”M×ÀÃæ (virtual desktop)£»
-	- Ìá¹©Ò•´°¿ØÖÆ…¢”µ£¬ß@°üÀ¨Ò•´°µÄ´óĞ¡¡¢Ò•´°µÄÖØ¯Bï@Ê¾¡¢Ò•´°µÄÒÆ„Ó¡¢Ò•´°µÄ×îĞ¡»¯µÈµÈ¡£
+	ç®¡ç†æ‰€æœ‰X clients
+	- æä¾›æ§åˆ¶å…ƒç´ ï¼Œå¦‚å·¥ä½œåˆ—ã€èƒŒæ™¯æ¡Œé¢çš„è¨­å®šç­‰ç­‰ï¼›
+	- ç®¡ç†è™›æ“¬æ¡Œé¢ (virtual desktop)ï¼›
+	- æä¾›è¦–çª—æ§åˆ¶åƒæ•¸ï¼Œé€™åŒ…æ‹¬è¦–çª—çš„å¤§å°ã€è¦–çª—çš„é‡ç–Šé¡¯ç¤ºã€è¦–çª—çš„ç§»å‹•ã€è¦–çª—çš„æœ€å°åŒ–ç­‰ç­‰ã€‚
 	ex: GNOME, KDE, twm, XFCE
 ![](./img/X_2.PNG)
 
 
 ##### Display Manager
 
-	Ìá¹©µÇÈëĞèÇó,İdÈëuser'sÕZÏµµÈÙYÁÏ
+	æä¾›ç™»å…¥éœ€æ±‚,è¼‰å…¥user'sèªç³»ç­‰è³‡æ–™
 	
-### X window †¢„ÓÁ÷³Ì
+### X window å•Ÿå‹•æµç¨‹
 
 
 
-#### øB¸çµÄlinuxË½·¿²Ë
+## éŒ¯èª¤:
+
+- (EE) Failed to load module "freetype" (module does not exist, 0)
+  error setting MTRR (base = 0xfd000000, size = 0x00800000, type = 1) Inappropriate ioctl for device (25)
+
+  error setting MTRR (base = 0xfd000000, size = 0x00800000, type = 1) Inappropriate ioctl for device (25)
+  
+  error setting MTRR (base = 0xfd000000, size = 0x00800000, type = 1) Inappropriate ioctl for device (25)
+  
+  FATAL: Module mach64 not found.
+  
+  (EE) [drm] drmOpen failed.
+  
+  (EE) MACH64(0): [dri] DRIScreenInit Failed
+  
+  (EE) config/hal: NewInputDeviceRequest failed (8)
+  
+  (EE) config/hal: NewInputDeviceRequest failed (8)
+  
+  (EE) config/hal: NewInputDeviceRequest failed (8)
+  
+  (EE) config/hal: NewInputDeviceRequest failed (8)
+
+
+#### é³¥å“¥çš„linuxç§æˆ¿èœ
 (http://linux.vbird.org/linux_basic/0590xwindow.php)
