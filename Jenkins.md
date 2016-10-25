@@ -61,3 +61,11 @@ Check Apache, Jenkins Server or Install it.
 修改作業"建置後動作"
 
 ![](./img/Jenkins_建置後動作robot.PNG)
+
+### ShiningPanda plugin
+
+提供Virtualenv Builder, Custom Virtualenv Builder and Standard Python Builder
+
+可用於創建虛擬環境和使用不同版本的python
+
+[Shiningpanda官方文件](http://shiningpanda.com/shiningpanda-plugin-for-jenkins-ci.html)
