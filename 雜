@@ -44,3 +44,12 @@ CentOS6.7 設置DNS＠NTUST
   GATEWAY=140.118.160.254
   DNS1=140.118.31.99
   DNS2=140.118.6.32
+  
+  
+#2016/12/12
+Ubuntu16.04 自動掛載HardDisk
+查uid: ls -l /dev/disk/by-uuid/
+修改/etc/fstab
+
+  UUID=7439-70EE /media/hd_vfat               vfat    defaults,umask=007,utf8,gid=46 0 1
+  gid=46: plugdev的群組
