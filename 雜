@@ -53,3 +53,9 @@ Ubuntu16.04 自動掛載HardDisk
 
   UUID=7439-70EE /media/hd_vfat               vfat    defaults,umask=007,utf8,gid=46 0 1
   gid=46: plugdev的群組
+  
+  
+#2017/1/03
+Ubuntu16.04 畫面閃跳：
+Error message(/var/log/syslog):
+Gdk-WARNING **: gnome-software: Fatal IO error 11 (Resource temporarily unavailable) on X server
