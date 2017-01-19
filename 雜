@@ -59,3 +59,10 @@ Ubuntu16.04 自動掛載HardDisk
 Ubuntu16.04 畫面閃跳：
 Error message(/var/log/syslog):
 Gdk-WARNING **: gnome-software: Fatal IO error 11 (Resource temporarily unavailable) on X server
+
+
+#2017/1/19
+SLES11SP3 NAT:
+  #echo 1 > /proc/sys/net/ipv4/ip_forward
+  #sysctl -p
+  #iptable -t nat -A POSTROUTING -s 192.168....0/24 -o eth0 -j MASQUERADE
