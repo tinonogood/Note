@@ -47,6 +47,16 @@
   which pbs_server: 檢查設定是否正確  # /usr/TORQUE/sbin/pbs_server
   
   cat /var/spool/TORQUE/server_name
+  
+  cp contrib/init.d/suse.trqauthd /etc/init.d/trqauthd
+  
+  chkconfig --add trqauthd
+  
+  echo /usr/local/lib > /etc/ld.so.conf.d/torque.conf
+  
+  ldconfig
+  
+  service trqauthd start
 
 新增服務與開機自啟動
   
@@ -58,14 +68,12 @@
   
   chkconfig --add suse.pbs_sched
   
-  chkconfig pbs_server on
-  
-  chkconfig pbs_sched on
-  
   
 初始化
 
   pbs_server -t create
+  
+  ./torque.setup tino
   
   
   
