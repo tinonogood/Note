@@ -19,28 +19,6 @@
   wget http://www.adaptivecomputing.com/download/torque/torque-4.2.10.tar.gz -O torque-4.2.10.tar.gz
   
   tar -zxvf torque-4.2.10.tar.gz & cd torque-4.2.10
-
---------------
-
-  ./configure
-  
-  make
-  
-  make install
-  
-開機trqauthd自動啟動
-  
-  cp contrib/init.d/suse.trqauthd /etc/init.d/trqauthd
-  
-  chkconfig --add trqauthd
-  
-  echo /usr/local/lib > /etc/ld.so.conf.d/torque.conf
-  
-  ldconfig
-  
-  service trqauthd start
-  
- --------------------------- 
   
   ./configure --prefix=/usr/TORQUE --with-scp --with-server-home=/var/spool/TORQUE
   
