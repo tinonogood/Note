@@ -1,32 +1,56 @@
-# Install (SLES11_sp3)
+# Install (SLES11_sp3, torque-4.2.10)
 
 需求: libxml2, openssl
-
-通道: 15001~3
-
-  vi /etc/sysconfig/SuSEfirewall2
-  
-  SERVER: FW_SERVICES_EXT_TCP="15001"; 
-  
-  MOM: FW_SERVICES_EXT_TCP="15002 15003"
   
 若無DNS Server, /etc/hosts: 使SERVER, MOM互認
 
+設置無密碼ssh
+
   zypper install libopenssl-devel libtool libxml2-devel boost-devel gcc gcc-c++ make gmake
   
-  zypper in wget
+<http://www.adaptivecomputing.com/support/download-center/torque-download/>
   
-  wget http://www.adaptivecomputing.com/download/torque/torque-4.2.10.tar.gz -O torque-4.2.10.tar.gz
+  tar -zxvf torque-4.2.10.tar.gz & cd torque-4.2.
+  
+1. RPM build
+
+Server(Deploy): 
+
+  rpmbuild -ta torque-4.2.10.tar.gz
+
+  rpm - ivh /usr/src/packages/RPMS/x86_64/torque-*
   
-  tar -zxvf torque-4.2.10.tar.gz & cd torque-4.2.10
+  cat /var/spool/torque/server_name # 確認Server: Deploy
+
+  scp {devel, client, } Node:/usr/src/packages/RPMS/x86_64/
+  
+創 Node file
+  
+  qmgr -c "create node bay2-3"
+  
+  qmgr -c "set node bay2-3 np=4"
+  
+  qmgr -c "list node bay2-3"
+  
+  qmgr -c "delete node xxx" # 刪除
+
+服務: /etc/init.d/{trqauthd, pbs_server, pbs_sched}
+  
+Nodes:
+
+  rpm - ivh /usr/src/packages/RPMS/x86_64/torque-*
+  
+  cat /var/spool/torque/server_name # 確認Server: Deploy
+  
+  cat /var/spool/torque/mom_priv/config # $pbsserver Deploy
+  
+服務: /etc/init.d/pbs_mom
+  
+2. Autotool (尚未成功)
   
   ./configure --prefix=/usr/TORQUE --with-scp --with-server-home=/var/spool/TORQUE
   
-  make
-  
-  make install
-  
-  make packages
+  make; make install; make packages
   
   vim /etc/profile.d/torque.sh
   
