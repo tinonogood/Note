@@ -12,7 +12,7 @@
   
   tar -zxvf torque-4.2.10.tar.gz & cd torque-4.2.10
   
-1. RPM build
+- RPM build
 
 Server(Deploy): 
 
@@ -45,8 +45,9 @@ Nodes:
   cat /var/spool/torque/mom_priv/config # $pbsserver Deploy
   
 服務: /etc/init.d/pbs_mom
+
   
-2. Autotool (尚未成功)
+- Autotool (尚未成功)
   
   ./configure --prefix=/usr/TORQUE --with-scp --with-server-home=/var/spool/TORQUE
   
