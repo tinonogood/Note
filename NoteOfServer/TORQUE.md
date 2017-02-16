@@ -10,8 +10,8 @@
   
 <http://www.adaptivecomputing.com/support/download-center/torque-download/>
   
-  tar -zxvf torque-4.2.10.tar.gz & cd torque-4.2.
-  
+  tar -zxvf torque-4.2.10.tar.gz & cd torque-4.2.10
+  
 1. RPM build
 
 Server(Deploy): 
