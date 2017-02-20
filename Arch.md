@@ -53,15 +53,15 @@ gcc, gzip, automake, make, sudo, which...基本工具
 
 1. 配置網路
 
-	#systemctl enable dhcpcd.service
+systemctl enable dhcpcd.service
 
-	#systemctl restart dhcpcd.service
+systemctl restart dhcpcd.service
 
 2. ifconfig,route在net-tools中，nslookup,dig在dnsutils中，ftp,telnet等在inetutils中,ip命令在iproute2中
 
-	#pacman -S net-tools dnsutils inetutils iproute2
+pacman -S net-tools dnsutils inetutils iproute2
 
-#Yaourt
+Yaourt
 
 ==================
 
