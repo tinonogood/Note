@@ -102,7 +102,7 @@ Calculated Component Properties
 | Spec Class        | Result, Lot Result, or Any Result |
 | Result Replicates       |  |
 | Units        |  |
-| Rounding and Places       | [Numeric Component Properties](./LW7.md##product-specifications) |
+| Rounding and Places       | [Numeric Component Properties](./LW7.md#numeric-components-properties) |
 | Lo_Control_1       |  |
 | Hi_Control_1       |  |
 | Lo_Control_2       |  |
