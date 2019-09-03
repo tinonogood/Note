@@ -13,7 +13,7 @@ Resample if the revised test need to apply
 
 ## Analyses Table
 
-Analysis
+### Analysis
 
 | Fields        | DESCR           | 
 | ------------- |:-------------:|
@@ -42,7 +42,7 @@ Analysis
 | Calc on Save|  |
 | ...| ... |
 
-Components
+### Components
 
 File Name Component Properties
 
@@ -50,7 +50,7 @@ Date, DB File Name, Interval, RTF Note, HTML Note, and DateTime Component Proper
 
 List, List Allow User Entry Component Properties
 
-Numeric Components Properties
+#### Numeric Components Properties
 
 | Fields        | DESCR           | 
 | ------------- |:-------------:|
@@ -102,7 +102,7 @@ Calculated Component Properties
 | Spec Class        | Result, Lot Result, or Any Result |
 | Result Replicates       |  |
 | Units        |  |
-| Rounding and Places       |  |
+| Rounding and Places       | [Numeric Component Properties](./LW7.md##product-specifications) |
 | Lo_Control_1       |  |
 | Hi_Control_1       |  |
 | Lo_Control_2       |  |
