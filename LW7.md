@@ -44,6 +44,32 @@ Resample if the revised test need to apply
 
 ### Components
 
+Configure Section
+
+| Fields        | DESCR           | 
+| ------------- |:-------------:|
+| data type        | |
+| Reps        | number of replicates ,0:not used |
+| Properties  | open Component Properties Dialog |
+| Other Fields | access fields added to the Component table by SA |
+| Rename   | |
+| Has Attributes | needs to be added to both ANALYSIS & RESULT table, Up to 20 |
+| Uses Instr | controls whether the Instrument field is active at result entry |
+| Allow Cancel | enable: allowed to cancel a result |
+| Optional         | enabled: the component is optional and does not require a value to be entered |
+| Reportable  | whether should be included in user written reports |
+| Displayed   | whether the component will appear at result entry |
+
+|      Component Codes   |            | 
+| ------------- |:-------------:|
+| Code   | alpha-numeric character up to 10 chars |
+| Value    | numeric value or an open ended number |
+
+|      Component Factors   |    associated with each "replicate" of a component | 
+| ------------- |:-------------:|
+| Value   | alpha-numeric character up to 10 chars |
+| operator     |  blank or *, /, //, +, - |
+
 File Name Component Properties
 
 Date, DB File Name, Interval, RTF Note, HTML Note, and DateTime Component Properties
@@ -59,8 +85,8 @@ List, List Allow User Entry Component Properties
 | Units        | |
 | Round Result Value and Decimal Places |  |
 | Min/Max Value       |  |
-| Allow out of Limit       | True: Out of limit may be entered |
-| Clamp Low/High      | a=1 Clamp lo=2 -> a='<2'; a=100 Clamp Hi=50 -> a ='>50' |
+| Allow out of Limit       | True: Out of limit may be entered, inadvertent error prevention |
+| Clamp Low/High      | a=1 Clamp lo=2 -> a=2; a=100 Clamp Hi=50 -> a =50 |
 | Format Calculation | LIMS Basic routine |
 | Browse Subroutine | subroutine that can be executed |
 
@@ -108,6 +134,6 @@ Calculated Component Properties
 | Lo_Control_2       |  |
 | Nominal Value       | not used by the LIMS but used to record the nominal value for reporting purposes |
 | Reported Name       | default to the Result Name |
-| Num History Pts       |  |
+| Num History Pts       | used to record for trend plot |
 | Season        |  |
-| Factor Values       |  |
+| Factor Values/Operator      | to midify formatted value |
