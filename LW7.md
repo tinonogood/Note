@@ -17,7 +17,7 @@ Access Routines define the scpoe for the Query Tag
 | Group Name    | which security group the Access Routine record belongs |
 | Num Args    | the number of arguments required |
 | Type     | defines the return value type: F, T, L R, S |
-| Argument1 ~20    | the arguments passed to the tag routine, [Valid Formats](./LW7.md#valid-formats-for-argument) |
+| Argument1 ~20    | the arguments passed to the tag routine, [Valid Formats](./LW7.md#valid-formats-for-arguments) |
 | Routine  | the LIMS routine or Crystal report which is associated with the Access Routine |
 
 ### Valid Formats for Arguments
