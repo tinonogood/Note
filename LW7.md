@@ -1,3 +1,47 @@
+# 11. Reporting
+
+## Access Routine Table
+
+Access Routines define the scpoe for the Query Tag
+
+| type|Arguments| Routine field| 
+| ------------- |:-------------:|:-------------:|
+| Folder      | Provide a list of fields that can be used in a Query Tag | SAMPLE, TEST or RESULT folder |
+| Table      | fields are required by the Built-in routine |  |
+| List      | fields are required by the Built-in routine |  |
+| Report      | Provide a list of fields that can be used in a Query Tag | Crystal Report Name  |
+| Single Value | fields are required by the Built-in routine |  |
+
+| Fields        | DESCR           | 
+| ------------- |:-------------:|
+| Group Name    | which security group the Access Routine record belongs |
+| Num Args    | the number of arguments required |
+| Type     | defines the return value type: F, T, L R, S |
+| Argument1 ~20    | the arguments passed to the tag routine, [Valid Formats](./LW7.md#valid-formats-for-argument) |
+| Routine  | the LIMS routine or Crystal report which is associated with the Access Routine |
+
+### Valid Formats for Arguments
+
+| Argument Format | Function | 
+| ------------- |:-------------:|
+| Table.Field    | exactly match, not case sensitive |
+| Table.Field </<=/>/>= | compared values passed to the Query Tag |
+| @MyFormula | passing a value to a Crystal Report formula field |
+| Order By |  |
+| SQL |  |
+| STORED_QUERY | Stored query must return the appropriate objects |
+| SUBROUTINE |  |
+
+## Query Tags Table
+
+get information from the LIMS
+
+| Fields        | DESCR           | 
+| ------------- |:-------------:|
+| Type    | Folder, Browse, List, Prompt, Report, Table, Single Value, Prompt List, Bar Code, Object Link, NonInteractive |
+| Group Name  | which security group the Access Routine record belongs |
+| Report Type | used only with Query Tags of type Report,  “Batch Reports”, “Inventory Reports” and “Stability Reports” |
+
 # 12.Analyses
 
 ## Analyses Concept
@@ -137,3 +181,19 @@ Calculated Component Properties
 | Num History Pts       | used to record for trend plot |
 | Season        |  |
 | Factor Values/Operator      | to midify formatted value |
+
+# 14. Organizing Data
+
+Folders: View SAMPLE, TEST and RESULT in Folder Manager
+
+Create from Folder Template table, Query based on Query Tag/ Search Template
+
+| Func        | DESCR           | 
+| ------------- |:-------------:|
+| Rebuild       | reset Query Tag & Search Template |
+| Refresh       | the saved Folder Query can be run / filter values prompts based on Auto Rebuild Flag |
+| auto-Rebuild       | prompt dialogs when the folder is opened or refreshed |
+| auto-Refresh       | stored Query run when the folder is opened and/or refreshed at a pre-defined interval |
+
+
+ 
