@@ -202,4 +202,10 @@ Create from Folder Template table, Query based on Query Tag/ Search Template
 
 check Hyper-V: Ctrl Plane > Programs > Program & Features, turn on/off Windows features > restart PC
 
+[在 Windows 10 上安裝 Hyper-V](https://docs.microsoft.com/zh-tw/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v)
 
+[HyperV gen1/2](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/plan/should-i-create-a-generation-1-or-2-virtual-machine-in-hyper-v)
+
+ISO source: https://heidoc.net/joomla/
+
+Roll back:
