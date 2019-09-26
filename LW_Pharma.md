@@ -25,3 +25,14 @@
 | DQ    | Design Qualification |
 | MQ    | Maintenance Qualification |
 | CQ    | Component Qualification |
+
+# Error Fix
+
+Training Env Error
+
+1275-3.1.0 Customer Kit_Labware 7: Product Review Report -> Subroutine: VWF_FN_REPORT -> Subroutine: FN_RPT_PRODUCT_REVIEW_BG & Subroutine: QT_PRODUCT_REVIEW_PHK -> ... -> Subroutine: FN_ERROR_TRAP: Error Message: Chart to JPG failed: ... Exception occurred. ( HRESULT DISP_E_EXCEPTION ) File not found: ijl15.dll ' nil nil nil 'F' nil nil 'T' nil nil) 
+
+Possible Cause: WA Quality Analyst Support is not properly installed
+
+Fix: Put ijl15.dll to  working dir.
+
