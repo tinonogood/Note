@@ -196,6 +196,19 @@ Create from Folder Template table, Query based on Query Tag/ Search Template
 | auto-Rebuild       | prompt dialogs when the folder is opened or refreshed |
 | auto-Refresh       | stored Query run when the folder is opened and/or refreshed at a pre-defined interval |
 
+
+# ELN
+
+Like MS microsoft, and add on...
+
+"AUDIT TRAIL"
+
+"Master Data Validation" (Workbook formate, caculation...)
+
+LIMS Basic -> excel Macro; Trigger
+
+For QA/QC usually used at recording QC batch, easy to review.
+
 # Other topic
  
 ## Hyper-V
