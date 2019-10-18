@@ -209,6 +209,8 @@ LIMS Basic -> excel Macro; Trigger
 
 For QA/QC usually used at recording QC batch, easy to review.
 
+Parsing Script @ LabStation(Modify), Instrument(Specify Script)
+
 # Other topic
  
 ## Hyper-V
