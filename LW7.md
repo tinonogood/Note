@@ -1,3 +1,12 @@
+# 2. System Wide Functionality
+
+## Status Rules
+
+To ctrl status change for Samples, tests or results.
+
+Supported Functions: Authorize, Cancel, Full activate, Reject, Release, Restore, Unrelease
+
+Rule types: CONTINUE_ / ALLOW_
 
 # 11. Reporting
 
