@@ -221,6 +221,14 @@ For QA/QC usually used at recording QC batch, easy to review.
 Parsing Script @ LabStation(Modify), Instrument(Specify Script)
 
 # Other topic
+
+## DB
+
+ODBC: Open Databse Connectivity
+
+RDO: Remote Data Object
+
+DAO: Data Access Object
  
 ## Hyper-V
 
