@@ -8,7 +8,7 @@ Spreadsheet based Interface, excel compatible format
 | Workbook          | enter data, view charts, add comments, embed images, import or attach file data   | 
 | Spreadsheet       | sheet, can include buttons for triggering macros    | 
 
-#
+# 2.	LabWare Electronic Lab Notebook
 
 TIP: automatically run macro names: "limitFailed", "onLoad", "onClose", "onStart", "samplesAdded", "saved"
 
@@ -99,20 +99,20 @@ For each Worksheet
 | Search    | used to Open an experiment, Search Template defined for the Experiment table|
 | Save     | |
 | Save As  | Copy the current workbook to an XLS file |
-| Cancel Experiment  |Set Experiment Status to X and will set the Disable Fields and Read Only flags to T |
+| Cancel Experiment  |Set Experiment STATUS to X and will set the DISABLE Fields and READ_ONLY flags to T |
 | Restore Cancelled Experiment  | |
-| Complete Experiment  | Experiment Status to C; Completed to T; Populate Completed By and Completed On fields. If Lock Completed = T ->  Disable Fields and Read Only flags to T|
-| Review Experiment  | Status to R; Disable Fields, Read Only and Reviewed flag to T. Populate the Reviewed By and Reviewed On fields   |
-| Close Experiment  | Closed flag to T;  Disable Fields and Read Only flags to T, it DOES NOT disable Menu Routines(R)|
-| Restore Experiment  | |
+| Complete Experiment  | Experiment STATUS to C; COMPLETED to T; Populate COMPLETED_BY and COMPLETED_ON fields. If Lock Completed = T ->  DISABLE Fields and READ_ONLY flags to T|
+| Review Experiment  | STATUS to R; DISABLE Fields, READ_ONLY and Reviewed flag to T. Populate the REVIEWED_BY and REVIEWED_ON fields   |
+| Close Experiment  | CLOSED flag to T;  DISABLE Fields and READ_ONLY flags to T, it DOES NOT disable Menu Routines(R)|
+| Restore Experiment  | CLOSED flag to F; DISABLE & READ_ONLY flags to F|
 | Append Workbook To Experiment  | |
 | Append a Document  | |
 | Refresh  | |
 | Print Preview    | |
 | Print   | |
-| Lock Session  | |
-| Switch User  | |
-| Create and Attach PDF  | |
+| Lock Session  |Display only Unlock Session screen. All other LIMS windows hidden |
+| Switch User  | Save All before Switch, otherwise changed by -> user2 |
+| Create and Attach PDF  | Module M0524-V01 is required|
 | Remove Workbook  | |
 | Remove Workbook Document  | |
 | Exit    | |
@@ -121,6 +121,10 @@ Workbook Data Review Dialog: Enter a review comment and Set the Review Type
 
 Qualifications for Review: Experiment Template has Boolean Fields: Review Your Work, Review Incomplete
 
-# Table Configuration
+## Edit Menu
+
+
+
+# 4. Table Configuration
 
 ## Experiment Template
