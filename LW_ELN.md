@@ -123,8 +123,75 @@ Qualifications for Review: Experiment Template has Boolean Fields: Review Your W
 
 ## Edit Menu
 
+Ctrl-C, Ctrl-V, Ctrl-X Suppressed!
+
+## Table Menu
+
+## Run Menu
+
+| Option        | Function           | 
+| ------------- |:-------------:|
+| Check Out  | CHECKED_OUT to T; CHECKED_OUT_BY and CHECKED_OUT_ON; unable to edit till Check In by Same user |
+| Check in    | |
+| Open SOP   | |
+| ...    | |
+| Browse   | Show a browse map list |
+| Run Macro    | Uppercase begin Macro can exec|
+| Exit    | |
+| Exit    | |
 
 
 # 4. Table Configuration
 
 ## Experiment Template
+
+
+| Option        | Function           | 
+| ------------- |:-------------:|
+| ...    | |
+| Auto Save Freq |   automatic saves time interval (Second)|
+| Scan Field  | Scanned Barcode based on this field |
+| ...    | |
+| Auto Review Sheet | worksheets are automatically reviewed when all of the workbook data has been reviewed |
+| ...    | |
+| Auto Review Data     | |
+| Lock Reviewed     | Worksheet Locked after Review , not apply if worksheet REVIEWED field to T by Auto Review function |
+| Lock Witnessed     | Worksheet Locked after Witness, not apply if worksheet WITNESSED field to T by Auto Witness function |
+| Zip Workbook Files     | experiment are stored in zipped format |
+| ...    | |
+| Lock Open     | single user read/write security |
+| ...    | |
+
+## Experiment Workbook Templates
+
+### Workbook Design Considerations
+
+| Area        | Comments           | 
+| ------------- |:-------------:|
+| Hardware    | |
+| Calculations    | Cross worksheets calc slow <br> Nested Formulas  |
+| Number of worksheets    | amount of mapping  <br> cell formulas |
+| Number of charts    | |
+| Conditional Formatting    | |
+| LIMS Objects  | |
+| Linking Macros to named ranges    | |
+| Adding maps on the fly    | better to have maps already configured then hide |
+| Saving workbooks     | Version Control <br>  File > Save as <br> Workbook > Set Worknook Template File|
+| Auditing    | |
+
+### Experiment Workbook Template Fields
+
+
+| Fields        | Function           | 
+| ------------- |:-------------:|
+| ...    | |
+| File Inst Grp 1~5    | determine the instruments from which file data can be imported |
+| Direct Inst Grp 1~5    | determine the instruments from which file data can be downloaded directly |
+| Analyses     | Only specify analyses can be added to the workbook |
+| ...    | |
+| Complete Sheets     | require all worksheets to be completed > can complete the workbook |
+| Store Result Objs     | determine if RESULT objects are included in WORKBOOK_OBJECTS |
+| ...    | |
+| Save All     | Require all data in a workbook to be audited |
+| ...    | |
+
