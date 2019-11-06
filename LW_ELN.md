@@ -195,3 +195,8 @@ Ctrl-C, Ctrl-V, Ctrl-X Suppressed!
 | Save All     | Require all data in a workbook to be audited |
 | ...    | |
 
+# other ELN software
+
+[eLabFTW](https://doc.elabftw.net/index.html) 
+
+eLabFTW on docker: beware windows/docker(MySQL) folder sharing
