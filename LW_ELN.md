@@ -200,3 +200,11 @@ Ctrl-C, Ctrl-V, Ctrl-X Suppressed!
 [eLabFTW](https://doc.elabftw.net/index.html) 
 
 eLabFTW on docker: beware windows/docker(MySQL) folder sharing
+
+1. .yml檔(elabftw): 新增 DB_PASSWORD, SECRET_KEY 載自https://demo.elabftw.net/install/generateSecretKey.php
+
+2. .yml檔(mysql): 新增 MYSQL_PASSWORD,MYSQL_ROOT_PASSWORD, 修改Volumes位置 (ex: C:\Users\elab-data\mysql:/var/lib/mysql)
+
+3. 更改本機Volumes位置權限
+
+[sciNote](https://scinote.net/)
