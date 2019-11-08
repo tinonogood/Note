@@ -222,6 +222,10 @@ Parsing Script @ LabStation(Modify), Instrument(Specify Script)
 
 # Other topic
 
+## Remote Desktop
+
+Target = service manager executable, plus startup parameters (;TS=0 ;WS=WSNAME ;SN=LIMS_PROD7 - same parameters used by the FireDaemon service)
+
 ## DB
 
 ODBC: Open Databse Connectivity
