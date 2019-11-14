@@ -206,6 +206,16 @@ Create from Folder Template table, Query based on Query Tag/ Search Template
 | auto-Refresh       | stored Query run when the folder is opened and/or refreshed at a pre-defined interval |
 
 
+# Install Module or Template
+
+Module: KT00932, KT01337
+
+Template:
+
+# Configuration Packge
+
+M0504(Info. Resource > Module User Guides)
+
 # ELN
 
 Like MS microsoft, and add on...
