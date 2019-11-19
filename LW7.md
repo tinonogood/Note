@@ -8,6 +8,55 @@ Supported Functions: Authorize, Cancel, Full activate, Reject, Release, Restore,
 
 Rule types: CONTINUE_ / ALLOW_
 
+## System
+
+### Client Configuration
+
+| Fields        | DESCR           | 
+| ------------- |:-------------:|
+|AlterInterval|How often checks for alert messages to current user, in Sec |
+|Background Server| act as a Background Server? |
+|CheckActions| determines if LabWare uses this client to check for pending actions |
+|Client Name| name of the computer running LabWare, default: current client machine name |
+|File Import Directory|the directory where import files will be located |
+|Import Files | Yes, import directory will be polled every 15 seconds  |
+|Label Print Type||
+|Save LabStaion Samples||
+|WebLIMSAutoStart||
+
+### Server Configuraation
+
+### Command Line Configuration
+
+| arguments     | DESCR           | 
+| ------------- |:-------------:|
+| SN |  ODBC Data Source Name, Server Name |
+| WS |  Workstation Name, Client Name |
+| UN | Login Username |
+| PW | Login Password |
+| DU | DB Username |
+| DP | DB Password |
+| WD | working directory |
+| BD | bind file |
+| BSN | bg server name |
+| BSP | bg server path |
+| TS | mimicking terminal server path |
+
+TS
+
+0:  runs in non-terminal/non-citrix mode - use the "Start In" folder of the shortcut as the working folder 
+
+1:  runs in terminal/citrix mode.  Creates terminal served subfolders in the client directory and uses GMT Offset and Daylight Savings settings from the LabWare user record
+
+2: like 1?
+
+-------------------------
+
+Plz Review 2.16!!!!
+
+----------------------------
+
+
 # 11. Reporting
 
 ## Access Routine Table
