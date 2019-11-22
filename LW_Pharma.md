@@ -26,6 +26,12 @@
 | MQ    | Maintenance Qualification |
 | CQ    | Component Qualification |
 
+# Lot Manager and Reporting
+
+![img](https://github.com/tinonogood/Note/blob/master/img/LW_PS_LM_Structure.PNG)
+
+
+
 
 # More Template
 
