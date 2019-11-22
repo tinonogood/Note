@@ -56,6 +56,51 @@ Plz Review 2.16!!!!
 
 ----------------------------
 
+# 4. Static Data Management
+
+## Table Master
+
+Table Master is a special table in the database that tells LIMS how to deal with each table in the database.
+
+A layer that exists between the database and the LIMS
+
+### Table Master Fields
+
+| Fields        | DESCR           | 
+| ------------- |:-------------:|
+| Pretty Name  |  |
+| Insert Flag  | "T" + User's  InsertIntoStaticTables privilege ->  may insert records into the table on the fly |
+| Uses Editor  |  Be accessed using the Table Manager editor, set to false for all child tables |
+| Configure Dialog  |  |
+| Key  | defines the keys for the table |
+| Description  |  Multiple fields may be defined |
+| Group  | security  |
+| Browse Entire Table  | Controls the browse action on tables, Browse Pages or One scroll down page |
+| Wizard Fields | hierarchical browse |
+| Report Name  |  |
+| Parent Table  |  |
+| User Added  | User Added tables can be Updated/Deleted via LIMS Basic SQL statements. |
+| Approval Routing |  |
+| Dynamic | flag the tables that are considered Dynamic |
+| Table Group  |  |
+| Bitmap  | custom bitmap to appear in the tree view of Explorer Table Manager, 24x16 Bitmaps directory |
+
+### Table Field Properties Dialog 
+
+| Fields        | DESCR           | 
+| ------------- |:-------------:|
+| Field Type  |  |
+| Link Table  | conjunction w/ Text data type,  to link a data field to a table |
+| List Key  | conjunction w/ List or MultiList data type, to link a data field to a list |
+| Where Clause | only for fields of Text data type that are linked to another table  |
+| Hidden  | Appears in the table editor |
+| Mandatory  |  |
+| Reset To Null |  |
+| Default Value  |  |
+
+
+
+
 
 # 11. Reporting
 
