@@ -306,8 +306,6 @@ Module: KT00932, KT01337
 
 Template:
 
-### 2019/11/25: 
-
 M0052-V04_Database Migration Utility: Cannot define PRIMARY KEY
 
 Build 036(X) -> Build 021(O), try older(B028) version to fix 
