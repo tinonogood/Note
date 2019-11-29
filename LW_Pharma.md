@@ -30,7 +30,55 @@
 
 ![img](https://github.com/tinonogood/Note/blob/master/img/LW_PS_LM_Structure.PNG)
 
+## 15. Static Data Definition
 
+### 15.5 Sample Plan
+
+Back end Table: T_PH_SAMPLE_PLAN, T_PH_SAMPLE_PLAN_EN (entry), T_PH_SAMPLE_PLAN_AM (amount)
+
+Define the number of samples to be generated for a Lot, depending on Number of Lot Containers and Lot Quantity, including Retained samples
+
+T_PH_SAMPLE_PLAN
+
+| Field   | DESC           | 
+| ------------- |:-------------:|
+| Version |  |
+| Active |  |
+| Group Name | Mandatory, security group |
+| Plan Note | Optional RTF note, reporting purpose |
+| Approval Group | List field used for approvals ?? |
+| Ready For Approval | set to true to initiate an approval routing |
+
+T_PH_SAMPLE_PLAN_EN
+
+| Field   | DESC           | 
+| ------------- |:-------------:|
+| Version |  |
+| Version |  |
+| Version |  |
+| Version |  |
+| Version |  |
+| Version |  |
+| Version |  |
+| Version |  |
+| Version |  |
+| Version |  |
+| Version |  |
+| Version |  |
+| Version |  |
+| Version |  |
+| Version |  |
+| Version |  |
+| Version |  |
+| Version |  |
+| Version |  |
+| Version |  |
+
+T_PH_SAMPLE_PLAN_AM
+
+| Field   | DESC           | 
+| ------------- |:-------------:|
+| Version |  |
 
 
 # More Template
