@@ -14,7 +14,7 @@
 | EM    | Environmental Manager |
 | API | Active Pharmaceutical Ingredient |
 | DPI | Dry Powder Inhaler |
-| Excipient | An inert substance which is added to a drug to provide bulk, for example in tablets |
+| Excipient | An inert substance which added -> drug to provide bulk |
 | FP | Finished Prod. |
 | IPC | In Process Control |
 | OOx | Out of xxx |
@@ -53,31 +53,49 @@ T_PH_SAMPLE_PLAN_EN
 
 | Field   | DESC           | 
 | ------------- |:-------------:|
-| Version |  |
-| Version |  |
-| Version |  |
-| Version |  |
-| Version |  |
-| Version |  |
-| Version |  |
-| Version |  |
-| Version |  |
-| Version |  |
-| Version |  |
-| Version |  |
-| Version |  |
-| Version |  |
-| Version |  |
-| Version |  |
-| Version |  |
-| Version |  |
-| Version |  |
-| Version |  |
+| Description |  |
+| Spec Type | Mandatory , Cross references w/ Product Spec, Test Location |
+| Stage | Mandatory , Cross references w/ PRODUCT_GRADE_STAGE |
+| Algorithm | Mandatory  |
+| Fixed Samples/Containers |  |
+| Log Sample |  |
+| Create Inventory | created for Retain sample |
+| Retained Sample | Retain sample will be displayed on the lot |
+| Stability |  |
+| Initial Status |  |
+| Num Samples | defining the fixed number of samples for 'Fixed' Algo. |
+| Quantity |  |
+| Units | Optional text field |
+| Recert Quantity |  |
+| Reduced Quantity |  |
+| Fixed Samples |  |
+| Fixed Containers |  |
+| Printer  |  |
+| Login Label  |  |
+| Receipt Label  |  |
+| Labels Per Sample |  |
+
+| Field   | TABLE Linked        | 
+| ------------- |:-------------:|
+| Spec Type | T_PH_SPEC_TYPE |
+| Stage | T_PH_STAGE |
+
+| Algorithm   | TABLE Linked        | 
+| ------------- |:-------------:|
+| SP_FIXED |  |
+| SP_ALL |  |
+| SP_ROOTN_P1 |  |
+| SP_QUAN | From table based on lot quantity |
+| SP_QUAN_CONT | From table based on lot containers |
+| SP_AQL | Calc. from AQL Sampling |
 
 T_PH_SAMPLE_PLAN_AM
 
-| Field   | DESC           | 
+| Field   | Description           | 
 | ------------- |:-------------:|
+| Version |  |
+| Version |  |
+| Version |  |
 | Version |  |
 
 
