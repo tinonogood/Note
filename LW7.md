@@ -269,13 +269,11 @@ Calculated Component Properties
 | Stage / Analysis        | Critical Step in the process/  ...  | 
 | Specification         | Result level information | 
 
-## Specifications Table
+## Product Specifications Table
 
-### Product 
+### Product Geade Sampling point
 
-### Grade 
-
-### Stage
+### Product Geade Stage
 
 ### Specifications
 
@@ -341,13 +339,44 @@ Top: specification summary; Lower: Lot results
 
 Show Results for All Grades -> show all/associated w/ selected grade results.
 
-| Field        | DESCR           | 
+| Top Field        | DESCR           | 
 | ------------- |:-------------:|
-|  Tests Done  | all required testing perfoemed, refer to [Product Specifications](./LW7.md#specifications-concepts) |
+|  Tests Done  | all required testing perfoemed, refer to [Product Specifications](./LW7.md#product-specifications-table) |
 | Primary In Spec (P.I.S.) |  |
 | No Rejects  |  |
 | No Modifications |  |
-| All Reviewed  | include A or R |
+| All Reviewed  | include A or R, Samples, tests and results |
+
+| Lower Field        | DESCR           | 
+| ------------- |:-------------:|
+| Value | LOT_RESULT.AVERAGE_VALUE average among RESULT.ENTRY, rounding @ LOT_RESULT.NUMERIC_VALUE |
+| Specification |  |
+| Source  | indicates the Lot or Lots that provided source values for the displayed value, Imported result (-C); Original (-O) |
+
+#### Print Report 
+
+Generate CoA, If Product, Grade or Customer have rpt defined.  Precedence: Customer > Grade > Product.  SAMPLE.LOT or LOT.LOT_NUMBER as the first argument.
+
+#### Disposition 
+
+Set the disposition status at the grade level. Must be in Lot Results View.
+
+LOT_DISP list caotains Disposition status.
+
+Dispositioned Lot event trigger
+
+## Lot Template s Table
+
+| Table Field       | DESCR           | 
+| ------------- |:-------------:|
+| Group Name  |  |
+| Id Config  |  |
+| Ext Link  |  |
+| Lot Rslt All Grds  | LOT_RESULTS table store only primary or not but all still displayed|
+| Custom Skip Lot | disable the base Skip Lot functionality |
+| Samp Controls Lot  | Whether a sample can update the Lot (product grade) |
+| Load Results  | Whether all lot sample test and result records are loaded  |
+| Folder Template | Edit > Open In Folder function. If no, only the Data tab is displayed |
 
 # Install Module or Template
 
