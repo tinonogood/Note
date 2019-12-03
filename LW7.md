@@ -265,8 +265,8 @@ Calculated Component Properties
 |    LEVEL |      DESCR      | 
 | ------------- |:-------------:|
 | Product        |            | 
-| Grade / Sampling Point | different Quality or customer requirements / ... | 
-| Stage / Analysis        | Critical Step in the process/  ...  | 
+| Sampling Point / Grade | Corresponds to a critical step in the process / different Quality or customer requirements | 
+| Stage / Spec Type / Analysis | particular analysis at different testing conditions/ special circumstances / Analysis | 
 | Specification         | Result level information | 
 
 ## Product Specifications Table
