@@ -1,5 +1,7 @@
 # 2. System Wide Functionality
 
+## Sample List Display
+
 ## Status Rules
 
 To ctrl status change for Samples, tests or results.
@@ -98,7 +100,19 @@ A layer that exists between the database and the LIMS
 | Reset To Null |  |
 | Default Value  |  |
 
+# 5. Managing GUI
 
+### Adding User Defined Menus
+
+Must be an entry in NLS file. [Valid Formats](./LW7.md#valid-formats-for-arguments)
+
+Check \*NLS_Build > Find "...MainMenu..." at which NLS.txt file > Add/modify New NLS key-value pair 
+
+## National Language Support NLS
+
+Allows any object of the presentation layer (UI) to be modified
+
+Integrate and Support multi language systems
 
 
 
@@ -299,6 +313,41 @@ Create from Folder Template table, Query based on Query Tag/ Search Template
 | auto-Rebuild       | prompt dialogs when the folder is opened or refreshed |
 | auto-Refresh       | stored Query run when the folder is opened and/or refreshed at a pre-defined interval |
 
+# 17. Lot Management
+
+Can also belong to several folders ( Lot, batch, project ...)
+
+Need refresh to reduce delays by freq. commu. w/ DB
+
+Primary Grade = Prod. Grade, 2nd Grade = checked for spec. limit
+
+Samples associated with a lot should have the same grade and sampling point as the lot
+
+## Lot Manager
+
+Interface for viewing samples/results associated with a lot. File > Lot Manager
+
+3 Tabs: *Summary , *Samples , *Results
+
+#### Sample Tab
+
+pass -> checkmark; fails: X; not entered: ?
+
+Tree View: refer to [Sample List Display](./LW7.md#sample-list-display)
+
+#### Result Tab
+
+Top: specification summary; Lower: Lot results
+
+Show Results for All Grades -> show all/associated w/ selected grade results.
+
+| Field        | DESCR           | 
+| ------------- |:-------------:|
+|  Tests Done  | all required testing perfoemed, refer to [Product Specifications](./LW7.md#specifications-concepts) |
+| Primary In Spec (P.I.S.) |  |
+| No Rejects  |  |
+| No Modifications |  |
+| All Reviewed  | include A or R |
 
 # Install Module or Template
 
