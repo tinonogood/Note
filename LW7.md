@@ -258,6 +258,8 @@ Standard Component Properties
 
 Calculated Component Properties
 
+### Analysis Limits
+
 # 13. Product Specifications
 
 ## Specifications Concepts
@@ -267,11 +269,88 @@ Calculated Component Properties
 | Product        |            | 
 | Sampling Point / Grade | Corresponds to a critical step in the process / different Quality or customer requirements | 
 | Stage / Spec Type / Analysis | particular analysis at different testing conditions/ special circumstances / Analysis | 
-| Specification         | Result level information | 
+| Specification | Result level information | 
+
+The use of NONE for Sampling Point, Stage and Spec Type 
+
+NONE's spec will be included to the other non-NONE's spec at same level
+
+Result Entry Window: Function > View Spec. Limits or Toolbar icon
+
+Fail Indicator column: high:>>>; low:<<<; not equal:<>
+
+5 Cat. of specifications: Numeric, Text, Formula, SPC and Reported
+
+Formula Spec not show value @ Result Entry Window, but first line -> 1st line be comment
+
+Reported Spec no Failure indicator
+
+### Control Limits
+
+@ PRODUCT_SPEC table w/  LO_CONTROL_1, HI_CONTROL_1 ... Up to 5 sets.
+
+Can have qualifiers (<,>,<=,>=). If no, just like < or >
+
+### Imposing Limits w/o Using Specifications 
+
+MIN_LIMIT, MAX_LIMIT @  RESULT table, no associated w/ Product or Grade 
+
+Can be set using Analysis Limits, refer to [Analysis Limits](./LW7.md#analysis-limits), Test list or LIMS Basic funnc  (SETMINLIMIT, SETMAXLIMIT)
+
+TEXT_LIMIT @ Result Table
+
+| Format        | Meaning           | 
+| ------------- |:-------------:|
+| X | Equal to X |
+| ~X | Not equal to X |
+| X,Y | Either X or Y |
+| ~X,Y | Neither X or Y |
+| X* | Like X... |
+| ~X* | Not like X... |
+
+#### Support for Ad-Hoc Low and High Control Limits 
+
+LO_CONTROL and HI_CONTROL @ RESULT table
+
+### Skip Lot Testing 
+
+Vary by LOT, can vary according to the product, the product grade or the supplier
+
+1. Product and Product Grade dialogs in Product Specifications 
+
+2. Suppliers table
+
+Precedence: Supplier table > Product Grade table > Product
+
+Partial flag @ Product Grade Stage : analysis is subject to Skip Lot Testing or not
+
+Keep track by PRODUCT.LOTS_TO_GO, PRODUCT_GRADE.LOTS_TO_GO and SUPPLIER.LOTS_TO_GO 
+
+Test under product grade w/ Always check=True noo Skip Lot Testing functionality
+
+### Seasonal Product Specifications 
+
+### Child Tables for Products 
+
+### User defined child tables on Product Spec records 
+
+### Locking Records 
+
+## Product Specifications Designer 
+
+@ Configure menu, organizes the information into multiple tabbed views
+
+Levels: Product, Grade/Sampling Pt, Stage/Analysis/Spec type and Product Specificatio
+
+Level view's Availability Depend on Product Template (Show Grades, Show Sampling Pnts and Show Stages)
+
+Fields at below views refer to [Product Specifications Table](./LW7.md#product-specifications-table)
+
+
 
 ## Product Specifications Table
 
-### Product Geade Sampling point
+### Product Grade Sampling point
 
 ### Product Geade Stage
 
