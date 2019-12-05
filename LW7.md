@@ -207,36 +207,48 @@ Accessing Test/Results Errors when Analysis, Components changed or deleted. Do v
 
 Resample if the revised test need to apply
 
+### Cross Sample Calculations
+
 ## Analysis Table
 
 ### Analysis Table Fields
 
 | Fields        | DESCR           | 
 | ------------- |:-------------:|
-| Version      | track version, up to 2000 |
-| Reported Name| name used reports, w/ case, unique |
-| Common Name  | required, same name w/ diff. methods achieving same result |
-| Analysis Type | group similar types of analyses, required |
+| \* Version      | track version, up to 2000 |
+| \* Reported Name| name used reports, w/ case, unique |
+| \* Common Name  | required, same name w/ diff. methods achieving same result,  |
+| \* Analysis Type | group similar types of analyses, Required |
 | Alias Name | name of the same analysis in an external system |
-| Lab      | provide additional security for Recv, Prep and Revw Tests, not desired |
-| Inst Group      | narrow the list of instruments assigned to a test |
-| Instrument       |  |
+| \* Lab | provide additional security for Recv, Prep and Revw Tests, not desired |
+| \* Inst Group      | narrow the list of instruments assigned to a test |
+| \* Instrument       | Default instrument |
 | Test Location      |  |
-| Expected Date      | expected time interval for results from this analysis |
-| Group Name      | group the analysis record belongs to |
-| Cost Units      | cost as a normalized rate for doing the test |
-| Reqd Volume      |  |
+| \* Expected Date   | expected time interval for results from this analysis |
+| \* Group Name      | group the analysis record belongs to |
+| Cost Units      | To Calc. Cost conj. w/ Cost Factor @ Customer table |
+| \* Reqd Volume      | Store the sample volume required to run the analysis.  This field is used when creating aliquots of a sample |
 | Destructive       | aliquots, True: sample material is destroyed when running the analysis |
 | Parameter Name / Tag     | prompt additional information |
 | Display Message      |  |
 | Key Contact      |  |
-| Ext Link      |  |
-| Active       | the highest version with the Active flag = True will be used |
+| \* Ext Link      |  |
+| \* Db File |  |
+| \* Active | the highest version with the Active flag = True will be used |
 | Test Template      |  |
-| Batch Link      |  |
-| AUTO_AUTHORIZE /AUTO_REJECT      |  |
-| Calc on Save|  |
-| ...| ... |
+| \* Batch Link      | To group analyses together for batching |
+| AUTO_AUTHORIZE/AUTO_REJECT      |  |
+| Calc on Save |  |
+| \* Aliquot Group  | Used to group tests when automatically aliquoted, Refer to [Sample Aliquots](./LW7.md#sample-aliquots) |
+| \* Split Replicates | True-> aliquots are created to hold each occurrence of the analysis when automatically aliquoted, Refer to [Sample Aliquots](./LW7.md#sample-aliquots) |
+| \* Cross Sample  | Refer to [Cross Sample Calculations](./LW7.md#cross-sample-calculations) |
+| Store Incmp Opts  |  |
+| \* Sample Type/ Container Type/ Storage Condition |  Use with Order Manager,Order Manager will automatically create a distinct sample for each combination of Sample Type, Container Type and Storage Condition |
+| Approval Role |  |
+| Quick Code |  |
+| \* Volume Units | Used as a reference to calculate the required sample volume |
+| Hide On Order Form |  |
+| Test Sequence No |  |
 
 ### Components Dialog
 
