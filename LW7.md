@@ -114,7 +114,41 @@ Allows any object of the presentation layer (UI) to be modified
 
 Integrate and Support multi language systems
 
+# 7. Sample Login
 
+## Sample Login Template Table
+
+### Table Fields
+
+| Fields        | DESCR           | 
+| ------------- |:-------------:|
+| Group Name  | security group |
+| Title | Title of Interface Window |
+| Initial Status |  |
+| Id Config |  |
+| Edit Tests | Edit Tests Option box at sample login |
+| Enter Results |  |
+| Label Id  |  |
+| Receipt Id  | Receipt report to be printed  |
+| Ext Link  | to an external file |
+| Add Product Tests | Automatically add Test to the sample based on the Product or Prod Grade (Grade > Prod) |
+| Add Spec Tests | Auto. add Test to the sample based on Product Specification.|
+| Override Optional | Conj. w/ Add Spec Tests, override components field refer to [Components Dialog](./LW7.md#components-dialog) |
+| Background Login | Background Server |
+| Override Displayed | override components field refer to [Components Dialog](./LW7.md#components-dialog) |
+| Override Reportable  |  |
+| Use Anal Limits  | Analysis Limits will only be applied if this field is set to True, refer to [Analysis Table](./LW7.md#analysis-table) |
+| Aliquot On | Conj. w/ Auto Aliquoting functionality, refer to [Sample Aliquots](./LW7.md#sample-aliquots) |
+| Aliquot Subroutine | Define a subroutine to generate the HTML for display in the Aliquot Dialog pop-up |
+| Label Mask | Define a custom sample identifier in the LIMS |
+| Sample Event Fields | Integer, to group sample by fields in e.g, PROJECT,SAMPLE_TYPE,SAMPLED_DATE |
+| Use Sample Rules | Refer to [Sample Rules Manager](./LW7.md#sample-rules-manager) |
+| Max Num Samples |  |
+| Batch Receipt | Default hidden @ Admin1, Only functional with Group Login, Print report at Group Login window is closed |
+
+# 8. Sample Administration
+
+## Sample Aliquots
 
 # 11. Reporting
 
@@ -173,16 +207,16 @@ Accessing Test/Results Errors when Analysis, Components changed or deleted. Do v
 
 Resample if the revised test need to apply
 
-## Analyses Table
+## Analysis Table
 
-### Analysis
+### Analysis Table Fields
 
 | Fields        | DESCR           | 
 | ------------- |:-------------:|
 | Version      | track version, up to 2000 |
 | Reported Name| name used reports, w/ case, unique |
 | Common Name  | required, same name w/ diff. methods achieving same result |
-| Analysis Type| group similar types of analyses, required |
+| Analysis Type | group similar types of analyses, required |
 | Alias Name | name of the same analysis in an external system |
 | Lab      | provide additional security for Recv, Prep and Revw Tests, not desired |
 | Inst Group      | narrow the list of instruments assigned to a test |
@@ -204,7 +238,7 @@ Resample if the revised test need to apply
 | Calc on Save|  |
 | ...| ... |
 
-### Components
+### Components Dialog
 
 Configure Section
 
@@ -369,7 +403,7 @@ Fields at below views refer to [Product Specifications Table](./LW7.md#product-s
 | Spec Class        | Result, Lot Result, or Any Result |
 | Result Replicates       |  |
 | Units        |  |
-| Rounding and Places       | [Numeric Component Properties](./LW7.md#numeric-components-properties) |
+| Rounding and Places | [Numeric Component Properties](./LW7.md#numeric-components-properties) |
 | Lo_Control_1       |  |
 | Hi_Control_1       |  |
 | Lo_Control_2       |  |
@@ -391,6 +425,14 @@ Create from Folder Template table, Query based on Query Tag/ Search Template
 | Refresh       | the saved Folder Query can be run / filter values prompts based on Auto Rebuild Flag |
 | auto-Rebuild       | prompt dialogs when the folder is opened or refreshed |
 | auto-Refresh       | stored Query run when the folder is opened and/or refreshed at a pre-defined interval |
+
+# 15. Projects
+
+A Project is a collection of samples that is grouped together for a common reason
+
+# 16. Batch
+
+The batch is a collection of samples or tests and is typically used to simulate a laboratory worksheet or as an autosampler load list
 
 # 17. Lot Management
 
@@ -458,6 +500,10 @@ Dispositioned Lot event trigger
 | Samp Controls Lot  | Whether a sample can update the Lot (product grade) |
 | Load Results  | Whether all lot sample test and result records are loaded  |
 | Folder Template | Edit > Open In Folder function. If no, only the Data tab is displayed |
+
+# 20. Order Manager
+
+## Sample Rules Manager
 
 # Install Module or Template
 
