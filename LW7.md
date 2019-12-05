@@ -346,7 +346,9 @@ Level view's Availability Depend on Product Template (Show Grades, Show Sampling
 
 Fields at below views refer to [Product Specifications Table](./LW7.md#product-specifications-table)
 
+## Product Specification Editor 
 
+@ Configure menu > Modify Product Spev
 
 ## Product Specifications Table
 
