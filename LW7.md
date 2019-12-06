@@ -263,10 +263,12 @@ Configure Section
 | Rename   | |
 | Has Attributes | needs to be added to both ANALYSIS & RESULT table, Up to 20 |
 | Uses Instr | controls whether the Instrument field is active at result entry |
-| Allow Cancel | enable: allowed to cancel a result |
-| Optional         | enabled: the component is optional and does not require a value to be entered |
+| Allow Cancel | enable: allowed to cancel a result during result entry |
+| Optional | enabled: the component is optional and does not require a value to be entered |
 | Reportable  | whether should be included in user written reports |
 | Displayed   | whether the component will appear at result entry |
+
+#### Properties
 
 |      Component Codes   |            | 
 | ------------- |:-------------:|
@@ -278,11 +280,21 @@ Configure Section
 | Value   | alpha-numeric character up to 10 chars |
 | operator     |  blank or *, /, //, +, - |
 
-File Name Component Properties
+#### File Name Component Properties
 
-Date, DB File Name, Interval, RTF Note, HTML Note, and DateTime Component Properties
+#### Date, DB File Name, Interval, RTF Note, HTML Note, and DateTime Component Properties
 
-List, List Allow User Entry Component Properties
+#### Text Component Properties
+
+| Fields        | DESCR           | 
+| ------------- |:-------------:|
+| Alias       | name of the same component in an external system |
+| CAS #       | chemical abstract number |
+| Format Calculation | Formatting on a result entry to formatted entry, Refer to [Format Calculation Table
+](./LW7.md#format-calculation-table) |
+| Trigger Browse | subroutine that can be executed |
+
+#### List, List Allow User Entry Component Properties
 
 #### Numeric Components Properties
 
@@ -291,20 +303,35 @@ List, List Allow User Entry Component Properties
 | Alias       | name of the same component in an external system |
 | CAS #       | chemical abstract number |
 | Units        | |
-| Round Result Value and Decimal Places |  |
+| Round Result Value / Decimal Places | Rounding rules to be applied, only rounding to 8 decimal places |
 | Min/Max Value       |  |
 | Allow out of Limit       | True: Out of limit may be entered, inadvertent error prevention |
 | Clamp Low/High      | a=1 Clamp lo=2 -> a=2; a=100 Clamp Hi=50 -> a =50 |
-| Format Calculation | LIMS Basic routine |
-| Browse Subroutine | subroutine that can be executed |
+| Format Calculation | Formatting on a result entry to formatted entry, Refer to [Format Calculation Table
+](./LW7.md#format-calculation-table) |
+| Trigger Browse | subroutine that can be executed |
 
-Exponential Component Properties
+## Exponential Component Properties
 
 Standard Component Properties
 
 Calculated Component Properties
 
 ### Analysis Limits
+
+## Analysis Rules Table
+
+## Analysis Types Table
+
+## Calculation Factors Table
+
+## Common Name Table
+
+## Format Calculation Table
+
+## Test Lists Table
+
+## Test Location Table
 
 # 13. Product Specifications
 
@@ -424,6 +451,14 @@ Fields at below views refer to [Product Specifications Table](./LW7.md#product-s
 | Num History Pts       | used to record for trend plot |
 | Season        |  |
 | Factor Values/Operator      | to midify formatted value |
+
+## Product filter Table
+
+## Product Template
+
+## Sampling Point Table
+
+## Season Table
 
 # 14. Organizing Data
 
