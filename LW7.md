@@ -80,6 +80,10 @@ Plz Review 2.16!!!!
 
 ### User Constraints
 
+## LDAP Security Option
+
+Integrates w/ LDAP in 5 functional elements: Authentication,  User Field Mapping, LIMS Roles, Auto Creation of Users &  Credential Caching
+
 ## User Management
 
 ### Table Fields
@@ -93,7 +97,7 @@ Plz Review 2.16!!!!
 | Close Link | link is closed to the database when the user logs out  |
 | User Disabled |  |
 | Allocate License | Reserve a slot in the LIMS license, the user will always be able to log in |
-| LDAP | Lightweight Directory Access Protocol |
+| LDAP | Lightweight Directory Access Protocol, refer to [LDAP Security Option](./LW7.md#ldap-security-option) |
 |  |  |
 | GMT Offset | in Minutes, Check DB's GMT time & OS's (on LIMS Instance) time |
 | Daylight saving |  |
@@ -121,6 +125,18 @@ Plz Review 2.16!!!!
 |  |  |
 | Sso Uid | Identity Provider Userid for SSO (Single Sign-On), 單一登入,不用對每個單一系統都逐一登入 |
 | ... | ... |
+
+#### User Configuration Dialog
+
+Analyses button: only enabled @ Business Rule: Operator analysis approval required = True
+
+Instrument button: only enabled @ Business Rule: Operator instrument approval required = True
+
+Lab, Sample/Project Filter -> Role
+
+Analysis, Instrument -> User 
+
+Login by Role can let LIMS administrator to configure the menus and toolbars 
 
 # 4. Static Data Management
 
@@ -683,3 +699,11 @@ check Hyper-V: Ctrl Plane > Programs > Program & Features, turn on/off Windows f
 ISO source: https://heidoc.net/joomla/
 
 Roll back:
+
+# RS232
+
+9 pin, 
+
+Baud rate/Data Bite/Parity/Stop  bits
+
+Software: Hyper Terminal, Docklight
