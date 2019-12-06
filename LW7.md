@@ -2,6 +2,22 @@
 
 ## Sample List Display
 
+## Business Rules
+
+### Review Rules 
+
+### Analysis Rules
+
+### Instruments Rules
+
+### Auditing Rules
+
+### Logon Rules
+
+### Database Tables Rules
+
+### Specifications Rules
+
 ## Status Rules
 
 To ctrl status change for Samples, tests or results.
@@ -58,6 +74,54 @@ Plz Review 2.16!!!!
 
 ----------------------------
 
+# 3. Security and Auditing
+
+## Data Security
+
+### User Constraints
+
+## User Management
+
+### Table Fields
+
+| Fields     | DESCR           | 
+| ------------- |:-------------:|
+| ... | ... |
+| Timeout Interval | Remain idle before the system auto. Log Out. Value is in minutes (0~10000) |
+| Lock on Timeout | Locked out |
+| Lock Timeout | Remain idle before the system auto. Lock Out. Value is in minutes (0~10000) |
+| Close Link | link is closed to the database when the user logs out  |
+| User Disabled |  |
+| Allocate License | Reserve a slot in the LIMS license, the user will always be able to log in |
+| LDAP | Lightweight Directory Access Protocol |
+|  |  |
+| GMT Offset | in Minutes, Check DB's GMT time & OS's (on LIMS Instance) time |
+| Daylight saving |  |
+| Sample Constraint | The defined constraint is appended to the SQL call, refer to [User Constraints](./LW7.md#user-constraints) |
+| Test Constraint |  |
+| Result Constraint |  |
+| Sample Disp Flds | Set of sample information to which the user is restricted, refer to [User Constraints](./LW7.md#display-fields), Use Sample Display Fields |
+| Test Disp Flds | Use Test Display Fields |
+| Restricted Use | Flag user accounts that may have limited access to the system based on the license agreement |
+| Use Customer Template | Use customer templates when viewing Projects, refer to [Project Manager](./LW7.md#project-customer-views) |
+| Holiday Schedule  | link to Holiday Schedule table |
+| Open Msg Window  |  |
+| Token Serial No | Define the serial number for a user’s token(=the key that is inserted in the USB port) |
+| Address Book | Refer to [Managing Contacts](./LW7.md#address-book) |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+| Sso Uid | Identity Provider Userid for SSO (Single Sign-On), 單一登入,不用對每個單一系統都逐一登入 |
+| ... | ... |
+
 # 4. Static Data Management
 
 ## Table Master
@@ -101,6 +165,12 @@ A layer that exists between the database and the LIMS
 | Default Value  |  |
 
 # 5. Managing GUI
+
+## Display Fields
+
+
+
+## Menus and Toolbar
 
 ### Adding User Defined Menus
 
@@ -477,6 +547,10 @@ Create from Folder Template table, Query based on Query Tag/ Search Template
 
 A Project is a collection of samples that is grouped together for a common reason
 
+## Project Manager
+
+### Project Customer Views
+
 # 16. Batch
 
 The batch is a collection of samples or tests and is typically used to simulate a laboratory worksheet or as an autosampler load list
@@ -551,6 +625,10 @@ Dispositioned Lot event trigger
 # 20. Order Manager
 
 ## Sample Rules Manager
+
+# 23. Managing Contacts
+
+## Address Book
 
 # Install Module or Template
 
