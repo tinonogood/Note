@@ -350,7 +350,7 @@ Resample if the revised test need to apply
 | \* Split Replicates | True-> aliquots are created to hold each occurrence of the analysis when automatically aliquoted, Refer to [Sample Aliquots](./LW7.md#sample-aliquots) |
 | \* Cross Sample  | Refer to [Cross Sample Calculations](./LW7.md#cross-sample-calculations) |
 | Store Incmp Opts  |  |
-| \* Sample Type/ Container Type/ Storage Condition |  Use with Order Manager,Order Manager will automatically create a distinct sample for each combination of Sample Type, Container Type and Storage Condition |
+| \* Sample Type/ Container Type/ Storage Condition |  Use with Order Manager,Order Manager will automatically create a distinct sample for each combination of Sample Type, Container Type and Storage Condition, define storage area |
 | Approval Role |  |
 | Quick Code |  |
 | \* Volume Units | Used as a reference to calculate the required sample volume |
@@ -377,7 +377,7 @@ Configure Section
 
 #### Properties
 
-|      Component Codes   |            | 
+|      Component Codes   |     alpha-numeric value -> numeric value       | 
 | ------------- |:-------------:|
 | Code   | alpha-numeric character up to 10 chars |
 | Value    | numeric value or an open ended number |
@@ -418,11 +418,79 @@ Configure Section
 ](./LW7.md#format-calculation-table) |
 | Trigger Browse | subroutine that can be executed |
 
-## Exponential Component Properties
+#### Exponential Component Properties
 
-Standard Component Properties
+#### Standard Component Properties
 
-Calculated Component Properties
+#### Calculated Component Properties
+
+| Fields        | DESCR           | 
+| ------------- |:-------------:|
+| Alias       | name of the same component in an external system |
+| CAS #       | chemical abstract number |
+| Units        | |
+| Round Result Value / Decimal Places | Rounding rules to be applied, only rounding to 8 decimal places |
+| Min/Max Value       | Over the limit -> In red |
+| Auto-Calc | Auto exec. when required input enter, false: right click -> refresh or duble click |
+| Clamp Low/High      | a=1 Clamp lo=2 -> a=2; a=100 Clamp Hi=50 -> a =50 |
+| Format Calculation | Formatting on a result entry to formatted entry, Refer to [Format Calculation Table
+](./LW7.md#format-calculation-table) |
+| | |
+| Factors | Refer to [Properties](./LW7.md#properties) |
+| Code |Refer to [Properties](./LW7.md#properties) |
+| Calculation | Refer to [Component Calculations ](./LW7.md#component-calculations) |
+
+#### Component Calculations 
+
+2 parts: Input, Equation
+
+##### Input
+
+Add Calcualation Variable, 7 types of input variables
+
+1. Component
+
+Calculation Variable Dialog 
+
+| Fields        | DESCR           | 
+| ------------- |:-------------:|
+| Analysis | Limited to a specific analysis |
+| Trigger | When the calculation triggers for Update |
+| Scope | Which test / component reps are used in defining the calculation variable |
+| Value | Defines which field from the result record  |
+| Output | How the results that have been selected are returned |
+
+2. Factor
+
+Values previously defined in the "Calculation Factors" table
+
+3. Standard/Reagent 
+
+provides access to standard/reagent data
+
+4. Dependent Sample 
+
+Provides access to another sample that is either the parent or the child of the current sample (created in Batch Manager). 
+
+5. Batch Component
+
+Provides access to batch level components
+
+6. Batch Sample
+
+Provides information from samples in the same batch as the sample for which this calculation is being executed
+
+7. Worksheet
+
+Not actively supported in the current version of the LIMS
+
+### Analysis Variations 
+
+Variations of an Analysis w/ Slight change in the component properties
+
+### Component Variations 
+
+To provide variations on component properties
 
 ### Analysis Limits
 
@@ -437,6 +505,15 @@ Calculated Component Properties
 ## Format Calculation Table
 
 ## Test Lists Table
+
+| Fields        | DESCR           | 
+| ------------- |:-------------:|
+| Group Name |  |
+| Ext Link  |  |
+| Set Rslt Order No | Sets Result Order Numbers to  |
+| Approval Role |  |
+
+### Test List Entries  
 
 ## Test Location Table
 
