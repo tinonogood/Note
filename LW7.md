@@ -835,6 +835,10 @@ Dispositioned Lot event trigger
 | Load Results  | Whether all lot sample test and result records are loaded  |
 | Folder Template | Edit > Open In Folder function. If no, only the Data tab is displayed |
 
+# 18. Standard Reagent 
+
+# 19. Instrument Manager 
+
 # 20. Order Manager
 
 Test driving, approval control workflow.
