@@ -623,9 +623,62 @@ Fields at below views refer to [Product Specifications Table](./LW7.md#product-s
 
 ## Product Specifications Table
 
+| Fields        | DESCR           |
+| ------------- |:-------------:|
+| Version  |  |
+| Code | Associating the product specifications with manufacturing product codes |
+| Cost Factor  | For accounting purposes |
+| Group Name    | |
+| Ext Link   |  |
+| Test List   | Tests associated with this product, be Auto @ "Sample Login Template"."Add Product Tests" = True |
+| Full Test Frequency | For skip lot testing only for Lot Manager |
+| Lots to Go | Lot... |
+| Report Format |  |
+| Active |  |
+| Sample Plan | Lot... |
+| Effective Date | Approval Manager... |
+| Approval Group   | Approval Manager... |
+| Ready for Approval | Approval Manager... |
+| ... temp | for view... |
+| Signed |  |
+
 ### Product Grade Sampling point
 
+#### Product Grade Properties Dialog 
+
+Define the properties of a grade/sampling point
+
+| Fields        | DESCR           |
+| ------------- |:-------------:|
+| Sampling Point  |  |
+| Grade |  |
+| Description  |  |
+| Continue Checking  | How the Product spec. are checked at result entry. True + w/ Product -> all other grades will check |
+| External Link |  |
+| Test List | Test List from the Product Grade will be assigned to the sample (Grade > Product), refer to [Sample Login Template Table](./LW7.md#sample-login-template-table) |
+| Always Check | Force a particular product grade/sampling point to always be checked for spec. compliance |
+| Full Test Frequency  |  |
+| Lots to Go  |  |
+| Report Format  | When run from lot manager ( Customer > Grade > Product) |
+
 ### Product Geade Stage
+
+@  PROD_GRADE_STAGE table
+
+Define the analyses to be tested
+
+| Fields        | DESCR           |
+| ------------- |:-------------:|
+| Stage |  |
+| Analysis |  |
+| Description |  |
+| Spec Type | Define a sampling plan associated with the stage/analysis, For Additional testing |
+| Num Reps  | Required number of test replicates , refer to [Sample Login Template Table](./LW7.md#sample-login-template-table) |
+| Partial  | Define whether this stage/analysis is required under partial testing for Lots |
+| Ext Link  |  |
+| Reported Name  |  |
+| Variation | Associate an Analysis variation with the stage/analysis |
+| Required  | Not used by the system at this time |
 
 ### Specifications
 
@@ -653,6 +706,7 @@ Fields at below views refer to [Product Specifications Table](./LW7.md#product-s
 ## Product filter Table
 
 ## Product Template
+
 
 ## Sampling Point Table
 
