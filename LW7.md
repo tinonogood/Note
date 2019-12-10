@@ -515,6 +515,20 @@ To provide variations on component properties
 
 ### Test List Entries  
 
+#### Test List Entry Properties 
+
+| Fields        | DESCR           | 
+| ------------- |:-------------:|
+| Instrument  |  |
+| Test Priority  | 0:lowest~ 1000:highest, Refer to the Sample Aliquots |
+| Test Location  |  |
+| Std Test | specify standard / optional |
+| Replicate Count |  |
+| Assign If Present  | Whether the test is added if replicates of the test are already present on the sample |
+| Variation  |  |
+| Reported Name |  |
+| Reported  |  |
+
 ## Test Location Table
 
 # 13. Product Specifications
@@ -737,6 +751,8 @@ Dispositioned Lot event trigger
 | Folder Template | Edit > Open In Folder function. If no, only the Data tab is displayed |
 
 # 20. Order Manager
+
+Test driving, approval control workflow.
 
 ## Sample Rules Manager
 
