@@ -550,7 +550,7 @@ Result Entry Window: Function > View Spec. Limits or Toolbar icon
 
 Fail Indicator column: high:>>>; low:<<<; not equal:<>
 
-5 Cat. of specifications: Numeric, Text, Formula, SPC and Reported
+5 Cat. of specifications: *Numeric, *Text, *Formula, *SPC and *Reported
 
 Formula Spec not show value @ Result Entry Window, but first line -> 1st line be comment
 
@@ -682,7 +682,9 @@ Define the analyses to be tested
 
 ### Specifications
 
-### Numeric Specification Limits 
+5 types: *Numeric, *Text, *Formula, *SPC and *Reported
+
+#### Numeric Specification Limits 
 
 | Fields        | DESCR           | 
 | ------------- |:-------------:|
@@ -697,11 +699,40 @@ Define the analyses to be tested
 | Lo_Control_1       |  |
 | Hi_Control_1       |  |
 | Lo_Control_2       |  |
-| Nominal Value       | not used by the LIMS but used to record the nominal value for reporting purposes |
+| Nominal Value       | Not used by the LIMS but used to record the nominal value for reporting purposes. Nominal Value: 1A; Measured Value: 0.98~1.02A |
 | Reported Name       | default to the Result Name |
 | Num History Pts       | used to record for trend plot |
 | Season        |  |
 | Factor Values/Operator      | to midify formatted value |
+
+#### Text Specification Limits 
+
+| Fields        | DESCR           | 
+| ------------- |:-------------:|
+| Rule       | Equal to, Not Equal to, Result is Like, Result is One of ... |
+| Specification  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+
+
+#### Formula Specification Limits 
+
+Limit testing rules which are based on a user defined equation
+
+#### Reported Specification Limits 
+
+Whether or not a value passes the Reported limits does not affect the in spec status of a sample, test, or result. 
+
+#### SPC Specification Limits 
+
+???
 
 ## Product filter Table
 
@@ -813,6 +844,10 @@ Test driving, approval control workflow.
 # 23. Managing Contacts
 
 ## Address Book
+
+# 24. Approval Manager
+
+Product spec driving, Records must go through multiple approvals before the record can be made active.
 
 # Install Module or Template
 
