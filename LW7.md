@@ -839,6 +839,67 @@ Dispositioned Lot event trigger
 
 # 19. Instrument Manager 
 
+### Instrument Management Window 
+
+| Visual Indicator | Meaning | 
+| ------------- |:-------------:|
+| System  |  |
+| Balance | Independent Instrument  |
+| Multi-Gear  | Parent Instrument |
+| Single-Gear | Component  |
+| State  |  |
+| Plug-in | In Service |
+| Un-plug | Out of service  |
+| Status  |  |
+| Green  | Good at PM & Cal. date |
+| Red    |  |
+
+## Instrument Event Template Table 
+
+## Instrument Template Table 
+
+Configure the fields that appear on the Instrument tab in the Manage Instruments dialog
+
+## Instruments Table 
+
+| Fields        | DESCR           | 
+| ------------- |:-------------:|
+| Group Name  |  |
+| Inst Group  |  |
+| Location  |  |
+| Operator  |  |
+| Vendor  |  |
+| Serial No |  |
+| PM Date  | PM = Preventative Maintenance |
+| PM Interval  |  |
+| PM Expiration | Date + Interval = Expiration |
+| Calib Date |  |
+| Calib Intv |  |
+| Calib Expiration |  |
+| Ext Link  |  |
+| Link Location | Directory where the instrument data files |
+| Parameter Name/ Value |  |
+| LabStation |  |
+| ... | See Below |
+| Parent Instrument  |  |
+| Inst/.../... Template  |  |
+| IP Address  |  |
+| Port Number  |  |
+| ... | ... |
+
+| Fields        | Allowed Values    | Req'd | Descrtption | 
+| ------------- |:-------------:|:-------------:|:-------------:|
+| Baud   | 1200, 2400, 4800, 9600, etc. |     Y |  |
+| Parity  | NONE, ODD, EVEN |    Y |  |
+| Stop Bits  | 1,2 | Y |  |
+| Data Bits | 7,8 |  Y |  |
+| Flow Control | NONE, HARDWARE, XON/XOFF  | Y  |  |
+| Instrument Class | GenericSingleValue | Y |  |
+| Low Threshold |  | N |  |
+| High Threshold |   | N |  |
+| Stability Delta |  | N |  |
+| Stability Numbe |  | N |  |
+
 # 20. Order Manager
 
 Test driving, approval control workflow.
