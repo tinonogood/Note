@@ -223,6 +223,22 @@ Integrate and Support multi language systems
 
 # 7. Sample Login
 
+## Sample Login 
+
+### Log Samples 
+
+#### Log From Sample
+
+Provides the user with the ability to CLONE samples
+
+#### Resample
+
+Linked back by Parent Sample and Original Sample fields
+
+## Batch Login
+
+## Standard Template Login 
+
 ## Sample Login Template Table
 
 ### Table Fields
@@ -764,6 +780,30 @@ A Project is a collection of samples that is grouped together for a common reaso
 
 ### Project Customer Views
 
+## Project Templates Table 
+
+| Fields        | DESCR           | 
+| ------------- |:-------------:|
+| Version   |  |
+| Ext Link  |  |
+| Group  |  |
+| Name Prefix / Id Confi |  |
+| Item Tables  | Child tables for the Project.  More than one child table can be specified |
+| Rslts in Lifecycle | Whether the status of project results will influence the Project Status, False: only the statuses of the project samples are used in calculating the project status |
+| Sample Disp Flds  |  |
+| Test Disp Flds  |  |
+| Close on Samp Log  |  |
+| Mod Samp Temp | Specify a Sample Login Template @ Modify Samples dialog |
+| Item Templates  | Specify a Template based on which Items in a Project can be generated |
+| Show Item Icons | Status bar icons are displayed for Project Item records  |
+| ... |  |
+| Sample Search Temp | Search Template to filter the samples that are displayed in the Samples tab |
+| ... |  |
+
+### Project Template Fields 
+
+Allows the user to add, remove, and change the order of the project fields
+
 # 16. Batch
 
 The batch is a collection of samples or tests and is typically used to simulate a laboratory worksheet or as an autosampler load list
@@ -961,6 +1001,8 @@ Configure the fields that appear on the Instrument tab in the Manage Instruments
 Test driving, approval control workflow.
 
 ## Sample Rules Manager
+
+Used to enforce sample requirements to ensure that analyses are added to samples with the correct configuration
 
 # 23. Managing Contacts
 
