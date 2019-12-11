@@ -768,6 +768,34 @@ A Project is a collection of samples that is grouped together for a common reaso
 
 The batch is a collection of samples or tests and is typically used to simulate a laboratory worksheet or as an autosampler load list
 
+SPIKE: 標準品, ex. column retention time: 1 std's time (SPIKE) vs. sample + std (test) 
+
+## Batch Manager 
+
+...
+
+### Run Menu
+
+Be Functional depending on whether a sample, test, or result is selected 
+
+### Batch Menu
+
+#### Batch Actions 
+
+Record an action on some or all of the samples and tests in a batch
+
+Refer to [Batch Action Calculation Table](./LW7.md#batch-action-calculation-table)
+
+#### Batch Prepare  
+
+## Batch Action Calculation Table
+
+## Batch Standard Protocol Table
+
+## Batch Tests Templates Table
+
+## QC Samples Table
+
 # 17. Lot Management
 
 Can also belong to several folders ( Lot, batch, project ...)
