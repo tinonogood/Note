@@ -794,6 +794,34 @@ Refer to [Batch Action Calculation Table](./LW7.md#batch-action-calculation-tabl
 
 ## Batch Tests Templates Table
 
+### Table Fields
+
+| Fields        | DESCR           | 
+| ------------- |:-------------:|
+| Version  |  |
+| Ext Link  |  |
+| Name Prefix & Id Config  | Defining the naming scheme for batches |
+| Global Flag |  |
+| Batch Protocol |  |
+| Assign to Objects | Batch name record @ Test (object) Table |
+| Analysis Link Field / Key | Control which tests can belong to the batch |
+| Change Link Key  | Controls whether the user can change the Link Key when creating the batch |
+| Folder Tag | Used to automatically populate the batch with tests |
+| Required Num  |  |
+| Maximum Num  |  |
+| Refresh Interval | Sets the automatic refresh period, 0: No automatic refreshing, In Second |
+| Add If Batched  | Allowed to be added to the Batch even if they are part of another batch |
+| Batch Report | Optional, |
+| Object Class | Defines SAMPLE, TEST or RESULT batch |
+| Scan Field | Specifies a SAMPLE field |
+| Batch Type | Optional, |
+| Edit Test Temp | If blank -> No Modify Tests option  |
+| Edit Sample Temp |  |
+
+### Batch Tests Template Fields 
+
+#### Effect of Batch Type 
+
 ## QC Samples Table
 
 # 17. Lot Management
