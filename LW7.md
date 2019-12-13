@@ -215,6 +215,12 @@ Config. > External Link Directories > Visual Workflow Files
 | Pre Visualworkflows  | Specifies one or more VWs that can be included on the current VW, inserted into the HTML Prior. |
 | Post Visualworkflows | Like Pre Visualworkflows, but inserted into the HTML After |
 
+## Visual Workflow Designer
+
+### Configuring Workflow Elements
+
+#### Visual Workflow Element Properties 
+
 ## National Language Support NLS
 
 Allows any object of the presentation layer (UI) to be modified
