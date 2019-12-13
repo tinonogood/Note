@@ -84,6 +84,20 @@ Plz Review 2.16!!!!
 
 Integrates w/ LDAP in 5 functional elements: Authentication,  User Field Mapping, LIMS Roles, Auto Creation of Users &  Credential Caching
 
+## General Auditing Concepts 
+
+### Standard Content of Audit Records 
+
+| Contents     | DESCR           | 
+| ------------- |:-------------:|
+| Event Type  |  |
+| Action  |  |
+| User  |  |
+| Audit Time Stamp  | GMT,  |
+| Reason  | Audit reason was provided at the time. Otherwise,  “No reason specified”  |
+| Database Entries  |  |
+| Child Records  |  |
+
 ## User Management
 
 ### Table Fields
@@ -1017,6 +1031,14 @@ Used to enforce sample requirements to ensure that analyses are added to samples
 # 24. Approval Manager
 
 Product spec driving, Records must go through multiple approvals before the record can be made active.
+
+## Changes Manager
+
+Utilities > Changes Manager
+
+Mechanism for querying the changes in the system configuration for a specified interval.  The ability to export and import the changed objects
+
+
 
 # Install Module or Template
 
