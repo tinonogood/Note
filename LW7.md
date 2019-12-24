@@ -241,6 +241,32 @@ Allows any object of the presentation layer (UI) to be modified
 
 Integrate and Support multi language systems
 
+### Creating and Implementing NLS Files 
+
+File Name: X_NLS-Y.TXT   eg.: ES_NLS-XTRA.TXT 
+
+X: Language prefix, Y: Specific File Name
+
+File can be either @ sever/working directories.
+
+X_NLS.OBJ file must be REBUILT, when changes NLS file.
+
+#### NLS File Configuration 
+
+Comments are delineated by /* and * /,  Blank lines are acceptable
+
+ “&” is used to define where the underscore is located on the text.  eg. DialogOK "&OK"
+ 
+#### Accelerator Key Configuration 
+
+Ctrl+\<a letter> to quickly access specified menu functions. eg. FolderManagerFileMenuNew     "&New...   ^^Ctrl+N" 
+
+Only one Ctrl+ \<a letter> can be used for each interface
+
+Cannot:  Ctrl+X, Ctrl+C, and Ctrl+V
+
+#### 
+
 # 7. Sample Login
 
 ## Sample Login 
