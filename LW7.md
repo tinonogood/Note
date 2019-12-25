@@ -265,7 +265,9 @@ Only one Ctrl+ \<a letter> can be used for each interface
 
 Cannot:  Ctrl+X, Ctrl+C, and Ctrl+V
 
-#### 
+#### NLS Build Log 
+
+
 
 # 7. Sample Login
 
