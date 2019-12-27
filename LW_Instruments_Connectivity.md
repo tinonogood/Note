@@ -16,6 +16,8 @@ Comport Setting
 
 Baudrate, Data bits, Parity, Stop bits, Flow control
 
+Testing Software: Hyper Terminal
+
 # Balance AB204
 
 ![img](https://github.com/tinonogood/Note/blob/master/img/LW_CPDC_Balance_AB204.PNG)
