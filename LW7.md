@@ -1128,10 +1128,3 @@ ISO source: https://heidoc.net/joomla/
 
 ![img](https://github.com/tinonogood/Note/blob/master/img/LW_VHD_Mount.PNG)
 
-# RS232
-
-9 pin, 
-
-Baud rate/Data Bite/Parity/Stop  bits
-
-Software: Hyper Terminal, Docklight
