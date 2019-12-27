@@ -1120,7 +1120,13 @@ check Hyper-V: Ctrl Plane > Programs > Program & Features, turn on/off Windows f
 
 ISO source: https://heidoc.net/joomla/
 
-Roll back:
+## Disk2vhd
+
+[Disk2vhd](https://docs.microsoft.com/en-us/sysinternals/downloads/disk2vhd)
+
+### Virtual Hard Disk Mount
+
+![img](https://github.com/tinonogood/Note/blob/master/img/LW_VHD_Mount.PNG)
 
 # RS232
 
