@@ -819,3 +819,43 @@ var x = 15 * 5;
 debugger; // Breakpoint -> stops the execution of JavaScript, and calls (if available) the debugging function
 document.getElementById("demo").innerHTML = x;
 
+
+/*
+Best Practice
+*/
+
+// Declarations on Top
+
+// Always Declare Local Variables -> Avoid Global Variables
+
+// Don't Use new Object()
+var x1 = {};           // new object instead of new Object()
+var x2 = "";           // new primitive string: new String() -> X
+var x3 = 0;            // new primitive number: new Number() -> X
+var x4 = false;        // new primitive boolean: new Boolean() -> X
+var x5 = [];           // new array object: new Array() -> X
+var x6 = /()/;         // new regexp object: new RegExp() -> X
+var x7 = function(){}; // new function object: new Function() -> X
+
+// Use === Comparison
+0 == "";        // true
+1 == "1";       // true
+1 == true;      // true
+
+0 === "";       // false
+1 === "1";      // false
+1 === true;     // false
+
+// End Your Switches with Defaults
+
+// Reduce Activity in Loops
+var i;
+for (i = 0; i < arr.length; i++) { // Bad
+} 
+
+var i;
+var l = arr.length;
+for (i = 0; i < l; i++) { //Better
+}
+
+// Reduce DOM Access
