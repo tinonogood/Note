@@ -66,3 +66,20 @@ U&"d\0061t\+000061"
 U&"d!0061t!+000061" UESCAPE '!'
 ```
 
+
+
+
+# psql Meta-Commands
+
+unquoted backslash: psql meta-command
+
+| Meta-commands   | Func.           | 
+| ------------- |:-------------:|
+| \c or \connect | \c "host=localhost port=5432 dbname=mydb" |
+| \conninfo |  |
+| \h or \help |  |
+| \l | List the databases in the server |
+| \q or \quit |  |
+|  |  |
+|  |  |
+|  |  |
