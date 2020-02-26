@@ -82,6 +82,6 @@ unquoted backslash: psql meta-command
 | \h or \help |  |
 | \l | List the databases in the server |
 | \q or \quit |  |
-|  |  |
+| \d | List tables |
 |  |  |
 |  |  |
