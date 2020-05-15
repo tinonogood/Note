@@ -1,11 +1,13 @@
-＃2016/04/24
+## 2020/05/15
+
+## 2016/04/24
 CentOS6.7 DNS重開機失效
   疑似 NetworkManager接管網路設置
   #chkconfig NetworkManager off
 
 
 
-＃2016/04/23
+## 2016/04/23
 新增網卡
 
   ＃ifconfig / #dmesg | grep -in eth
@@ -28,7 +30,7 @@ CentOS6.7 DNS重開機失效
   # ping 192.168.0.1
 
 
-＃2016/04/21
+## 2016/04/21
 CentOS6.7 設置DNS＠NTUST
 
   #vim /etc/sysconfig/network-scripts/ifcfg-eth0
@@ -46,7 +48,7 @@ CentOS6.7 設置DNS＠NTUST
   DNS2=140.118.6.32
   
   
-#2016/12/12
+## 2016/12/12
 Ubuntu16.04 自動掛載HardDisk
 查uid: ls -l /dev/disk/by-uuid/
 修改/etc/fstab
@@ -55,13 +57,13 @@ Ubuntu16.04 自動掛載HardDisk
   gid=46: plugdev的群組
   
   
-#2017/1/03
+## 2017/1/03
 Ubuntu16.04 畫面閃跳：
 Error message(/var/log/syslog):
 Gdk-WARNING **: gnome-software: Fatal IO error 11 (Resource temporarily unavailable) on X server
 
 
-#2017/1/19
+## 2017/1/19
 SLES11SP3 NAT:
   #echo 1 > /proc/sys/net/ipv4/ip_forward
   #sysctl -p
