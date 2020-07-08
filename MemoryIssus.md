@@ -71,3 +71,9 @@ SWAP(Linux)
 #### Physical Disk
 
 ## VMMAP
+
+[VMMAP Download](https://docs.microsoft.com/en-us/sysinternals/downloads/vmmap)
+
+A Sysinternals utility to monitor memory usage.
+
+Display memory allocations by type
