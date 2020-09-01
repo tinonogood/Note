@@ -18,123 +18,35 @@ EL. = CDN End point
 
 ### Services - Network & Content Delivery
 
-#### VPC
-
-#### Route53 (DNS service) 
-
-DNS port: 53
-
-#### Cloud Front
-
-Content Delivery Network
-
-#### Direct Connetct
+#### VPC, Route53 (DNS service, DNS port: 53), Cloud Front (Content Delivery Network), Direct Connetct
 
 ### Services - Compute
 
-#### EC2
-
-#### EC2 Container Service
-
-ECS, docker
-
-#### Elastic Beanstalk
-
-developer exam
-
-#### Lambda
-
-Cloud computing, serverless
-
-#### Lightsail
+#### EC2, EC2 Container Service (ECS, docker), Elastic Beanstalk (developer exam), Lambda (Cloud computing, serverless), Lightsail
 
 ## Storage, DB, Migration & Analytics
 
 ### Services - Storage
 
-#### S3
-
-Objects base
-
-#### Glacier
-
-Files, Data archiver
-
-#### EFS
-
-#### Storage Gateway
-
-VM to S3
+#### S3 (Objects base), Glacier (Files, Data archiver), EFS, Storage Gateway (VM to S3)
 
 ### Services - Database
 
-#### RDS
-
-DB
-
-#### Dynamo DB
-
-Non-related DB
-
-#### Redshift
-
-Warehouse, Big data
-
-#### Elasticache
-
-freq. visited
+#### RDS (DB), Dynamo DB (Non-related DB), Redshift (Warehouse, Big data), Elasticache (freq. visited)
 
 ### Services - Migration
 
-#### Snowball
-
-#### DMS
-
-DB Migrate service
-
-#### SMS
-
-Server Migration Service, VM to VM
+#### Snowball, DMS (DB Migrate service), SMS (Server Migration Service, VM to VM)
 
 ### Services - Analytics
 
-#### Athena
-
-#### EMR
-
-#### Cloud search
-
-#### Elastic search
-
-#### Kinesis
-
-#### Data Pipeline
-
-#### Quick Sight
-
-Visualization
+#### Athena, EMR, Cloud search, Elastic search, Kinesis, Data Pipeline, Quick Sight (Visualization)
 
 ## Security, Management, Tools,App, Services, Dev. Tools, Mobile Sevrice, Iot
 
 ### Security
 
-#### IAM
-
-Identity, security
-
-#### Inspector
-
-#### Certificate Manager
-
-#### Directory Service
-
-#### WAF
-
-Web App Firewall
-
-#### Artifact
-
-ISO 27001, 9001 ......
+#### IAM (Identity, security), Inspector, Certificate Manager, Directory Service, WAF (Web App. Firewall), Artifact (ISO 27001, 9001...)
 
 ### Management
 
