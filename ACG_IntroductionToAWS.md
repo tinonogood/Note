@@ -44,17 +44,17 @@ EL. = CDN End point
 
 ## Security, Management, Tools,App, Services, Dev. Tools, Mobile Sevrice, Iot
 
-### Security
+### Security & Identity
 
-#### IAM (Identity, security), Inspector, Certificate Manager, Directory Service, WAF (Web App. Firewall), Artifact (ISO 27001, 9001...)
+#### IAM (Identity, security), Inspector, Certificate Manager, Directory Service, WAF (Web Application Firewall), Artifact (ISO 27001, 9001...)
 
-### Management
+### Management tools
 
 #### Cloud watch
 
 #### Cloud Formation
 
-Document of config., Command line,.... Infra. in Code
+Document of config., Command line,.... Infra. into Code
 
 #### Cloud Trail
 
