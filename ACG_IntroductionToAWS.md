@@ -76,6 +76,24 @@ chef, DevOps
 
 #### SWF
 
+simple workflow service
+
 Auto task...
 
-####
+#### API Gateway
+
+#### AppStream
+
+#### Elastic Transcoder
+
+### Developer Tools
+
+#### CodeCommit
+
+#### CodeBuild
+
+#### CodeDeploy
+
+#### CodePipeline
+
+
