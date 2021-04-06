@@ -8,3 +8,4 @@ else  => give string "3"
 
 loop >= 750 && Dice > 0.5 stop while loop
 
+Hint: Build Array, Boolean Array to number
