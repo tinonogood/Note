@@ -1,3 +1,11 @@
+# 2021/04/08
+
+lottery: 6(1~53) + 1(1~9) places
+
+No duplicate
+
+對獎號 (enter by user, no duplicate) -> 中幾獎 (up3 ~ 7)
+
 # 2021/04/06
 
 Dice(Random number), >=0.8 and shift reguster +1/ loop (While loop) => give string "1"
