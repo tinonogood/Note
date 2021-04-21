@@ -1,6 +1,6 @@
 # 2021/04/08
 
-lottery: 6(1~53) + 1(1~9) places
+lottery: 6 (1-53) + 1 (1-9) places
 
 No duplicate
 
