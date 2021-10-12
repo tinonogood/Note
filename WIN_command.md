@@ -36,3 +36,7 @@ How to delete/clear?
 ## Script
 
 Save with ".bat" extension 
+
+#### @ 
+
+less verbose (ex. `@dir`)
