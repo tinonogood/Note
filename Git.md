@@ -1,3 +1,15 @@
+# windows github
+
+### install/upgrade github cli
+
+command line (cmd)
+
+`winget install --id GitHub.cli`
+
+`winget upgrade --id GitHub.cli`
+
+
+
 # git設定
 
 $ git config --global user.name "name"
