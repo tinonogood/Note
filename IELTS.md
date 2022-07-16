@@ -18,6 +18,10 @@ yourself, everyday subjects, < 2mins, 2-3 sentences
 
 1 or 2 following Q
 
+## Part 3:
+
+4-5 min, related q, not your personal experience
+
 
 # Writing
 
