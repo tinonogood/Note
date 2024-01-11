@@ -16,7 +16,7 @@ https://learn.microsoft.com/en-us/sql/ssma/db2/sql-server-migration-assistant-fo
 - win installer 3.1 later
 - .Net framework 4.7.2 later
 - 4G RAM
-- 2013 ms visual C++
+- 2013 ms visual C++ (x64 and x86)
 - OLE DB Provider for DB2 v6 later 
 - SSMA
 
